@@ -17,7 +17,7 @@ import com.hixx.web.data.entity.Member;
 /**
  * Servlet implementation class LoginController
  */
-@WebServlet("/login")
+@WebServlet("/joinus/login")
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
