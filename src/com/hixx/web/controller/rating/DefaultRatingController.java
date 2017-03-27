@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.hixx.web.dao.mysql.MySQLCityScoreDao;
 import com.hixx.web.data.dao.CityScoreDao;
 
-@WebServlet("/rating/defaultRating")
+@WebServlet("/default-rating")
 public class DefaultRatingController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -22,15 +22,22 @@ public class DefaultRatingController extends HttpServlet {
 		request.setAttribute("result", result);
 		
 		if(result <10) {
+			
 			request.getRequestDispatcher("/WEB-INF/views/customer/default-rating.jsp").forward(request, response);
 		}
 		else {
-			System.out.println("³¡");
+			System.out.println("ë");
 		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		String city = request.getParameter("city");
+		String trate = request.getParameter("city-rate");
+		String frate = request.getParameter("food-rate");
+		String srate = request.getParameter("sightsee-rate");
+		
+		
+		
 		
 		
 		

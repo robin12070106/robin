@@ -13,7 +13,7 @@ import com.hixx.web.dao.mysql.MySQLMemberDao;
 import com.hixx.web.data.dao.MemberDao;
 import com.hixx.web.data.entity.Member;
 
-@WebServlet("/joinus/join")
+@WebServlet("/join")
 public class JoinController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -57,8 +57,11 @@ public class JoinController extends HttpServlet {
 		}
 		else validate = 1;
 		
-		request.setAttribute("validate", validate);
-		request.getRequestDispatcher("/WEB-INF/views/customer/join.jsp").forward(request, response);
+		if (validate == 0) response.sendRedirect("default-rating");
+		else{
+			request.setAttribute("validate", validate);
+			request.getRequestDispatcher("/WEB-INF/views/customer/join.jsp").forward(request, response);
+		}
 	}
 
 }
