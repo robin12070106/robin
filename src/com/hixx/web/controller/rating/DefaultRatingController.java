@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.hixx.web.dao.mysql.MySQLCityScoreDao;
 import com.hixx.web.data.dao.CityScoreDao;
 
-@WebServlet("/defaultRating")
+@WebServlet("/rating/defaultRating")
 public class DefaultRatingController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

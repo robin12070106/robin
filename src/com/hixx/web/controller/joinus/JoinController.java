@@ -13,7 +13,7 @@ import com.hixx.web.dao.mysql.MySQLMemberDao;
 import com.hixx.web.data.dao.MemberDao;
 import com.hixx.web.data.entity.Member;
 
-@WebServlet("/join")
+@WebServlet("/joinus/join")
 public class JoinController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
