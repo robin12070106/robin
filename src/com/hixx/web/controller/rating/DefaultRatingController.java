@@ -44,6 +44,9 @@ public class DefaultRatingController extends HttpServlet {
 				for(int i=0; i<sw;i++) {
 					cityHanto[i] = cityHan[cityRank[i]-1];
 					cityPassto[i] = cityPass[cityRank[i]-1];			
+					System.out.println(cityRank[i]);
+					System.out.println(cityHanto[i]);
+					System.out.println(cityPassto[i]);
 				}
 				
 				request.setAttribute("cityRank", cityRank);
