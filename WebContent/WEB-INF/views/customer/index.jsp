@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -11,7 +12,7 @@
         
         <meta name="author" content="Muhammad Morshed">
 		
-        <title>HIXX | ¿©Çà ÃßÃµ</title> 
+        <title>HIXX | ì—¬í–‰ ì¶”ì²œ</title> 
 		          
 		<!-- Mobile Specific Meta
 		================================================== -->
@@ -24,7 +25,7 @@
 		================================================== -->
 		<!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- bootstrap.min css -->"C:/Users/LSJ/Desktop/HIXX(°¡ÀåÃÖ½Å)/WebContent/login.jsp"
+		<!-- bootstrap.min css -->"C:/Users/LSJ/Desktop/HIXX(ê°€ì¥ìµœì‹ )/WebContent/login.jsp"
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<!-- Animate.css -->
         <link rel="stylesheet" href="css/animate.css">
@@ -112,8 +113,8 @@
 							<div class="bg-img bg-img-2"></div>
 						<div class="carousel-caption">
 							<div>
-								<h2 class="heading animated fadeInDown">»ç¶÷ÀÌ ¿©ÇàÀ» ÇÏ´Â °ÍÀº µµÂøÇÏ±â À§ÇØ¼­°¡ ¾Æ´Ï¶ó ¿©ÇàÇÏ±â À§ÇØ¼­ÀÌ´Ù</h2>
-								<h3 class="animated fadeInUp">±«Å×</h3>
+								<h2 class="heading animated fadeInDown">ì‚¬ëŒì´ ì—¬í–‰ì„ í•˜ëŠ” ê²ƒì€ ë„ì°©í•˜ê¸° ìœ„í•´ì„œê°€ ì•„ë‹ˆë¼ ì—¬í–‰í•˜ê¸° ìœ„í•´ì„œì´ë‹¤</h2>
+								<h3 class="animated fadeInUp">ê´´í…Œ</h3>
 								<a class="btn btn-green animated fadeInUp" href="#body">Get Started</a>
 							</div>
 						</div>
@@ -127,8 +128,8 @@
 							<div class="bg-img bg-img-3"></div>
 						<div class="carousel-caption">
 							<div>
-								<h2 class="heading animated fadeInRight">HIXX¸¦ ¸ğ¹ÙÀÏ¿¡¼­µµ ¸¸³ª¼¼¿ä</h2>
-								<h3 class="animated fadeInLeft">¾ğÁ¦ ¾îµğ¼­³ª HIXX¿Í ÇÔ²²</h3>
+								<h2 class="heading animated fadeInRight">HIXXë¥¼ ëª¨ë°”ì¼ì—ì„œë„ ë§Œë‚˜ì„¸ìš”</h2>
+								<h3 class="animated fadeInLeft">ì–¸ì œ ì–´ë””ì„œë‚˜ HIXXì™€ í•¨ê»˜</h3>
 								<a class="btn btn-green animated fadeInUp" href="https://play.google.com/store/apps">Download</a>
 							</div>
 						</div>
@@ -181,13 +182,14 @@
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="#about">My Page</a></li>
-                        <li><a href="#services">¿©ÇàÁö ÃßÃµ</a></li>
-                        <li><a href="#showcase">µ¿Çà ÃßÃµ</a></li>
+                        <li><a href="#services">ì—¬í–‰ì§€ ì¶”ì²œ</a></li>
+                        <li><a href="#showcase">ë™í–‰ ì¶”ì²œ</a></li>
                         <li><a href="#our-team">SNS</a></li>
-                        <li><a href="#pricing">***´Ô È¯¿µÇÕ´Ï´Ù</a></li>
                         <li><a href="#blog">Blog</a></li>
-                        <li><a href="login.jsp">·Î±×¾Æ¿ô</a></li>
+                        <c:if test="${not empty sessionScope.id }">
+                        <li><a href="#about">${sessionScope.id } ë‹˜ í™˜ì˜í•©ë‹ˆë‹¤</a></li>                                              
+                        <li><a href="logout">ë¡œê·¸ì•„ì›ƒ</a></li>
+                        </c:if>
                     </ul>
                 </nav>
 				<!-- /main nav -->
@@ -199,7 +201,7 @@
         ==================================== -->
 		
 		<!--
-		Start My Page(div id°¡ about) Section
+		Start My Page(div idê°€ about) Section
 		==================================== -->
 		<section id="about" class="bg-one">
 			<div class="container">
@@ -270,7 +272,7 @@
 							    <span class="close">&times;</span>
 							    
 								
-								<div id="star-container" style="min-width: 48%; height: 350px; max-width:1000px; padding-bottom:30px; margin: 0 auto" data-highcharts-chart="0"><div id="highcharts-bzc4q92-0" class="highcharts-container " style="position: relative; overflow: hidden; width: 300px; height: 250px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><desc>Created with Highcharts 5.0.9</desc><defs><clipPath id="highcharts-bzc4q92-1"><rect x="0" y="0" width="223" height="162" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="300" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="67" y="10" width="223" height="162"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 68.5 10 L 68.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 178.5 10 L 178.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 287.5 10 L 287.5 172" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 172.5 L 290 172.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 132.5 L 290 132.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 91.5 L 290 91.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 51.5 L 290 51.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 9.5 L 290 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="67" y="10" width="223" height="162"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 68.5 172 L 68.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 178.5 172 L 178.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 287.5 172 L 287.5 182" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 67 172.5 L 290 172.5"></path></g><g class="highcharts-axis highcharts-yaxis "><text x="28.046875" text-anchor="middle" transform="translate(0,0) rotate(270 28.046875 91)" class="highcharts-axis-title" style="color:#666666;fill:#666666;" y="91">Values</text><path fill="none" class="highcharts-axis-line" d="M 67 10 L 67 172"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-area-series highcharts-color-0 " transform="translate(67,10) scale(1 1)" clip-path="url(#highcharts-bzc4q92-1)"><path fill="rgba(124,181,236,0.75)" d="M 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788 L 220.8137254902 162 L 177.08823529412 162 L 133.36274509804 162 L 89.637254901961 162 L 45.911764705882 162 L 2.1862745098039 162" class="highcharts-area"></path><path fill="none" d="M 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788" class="highcharts-graph" stroke="#7cb5ec" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -7.8137254901961 52.82820000000001 L 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788 L 230.8137254902 121.0788" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-area-series highcharts-color-0 highcharts-tracker " transform="translate(67,10) scale(1 1)" clip-path="none"><path fill="#7cb5ec" d="M 220 121.0788 A 0 0 0 1 1 220 121.0788 Z" class="highcharts-halo highcharts-color-0" fill-opacity="0.25"></path><path fill="#7cb5ec" d="M 224 121.0788 A 4 4 0 1 1 223.99999800000018 121.07480000066667 Z" stroke="#ffffff" stroke-width="1" visibility="hidden"></path></g></g><g class="highcharts-button highcharts-contextbutton" style="cursor:pointer;" stroke-linecap="round" transform="translate(266,10)"><title>Chart context menu</title><rect fill="#ffffff" class=" highcharts-button-box" x="0.5" y="0.5" width="24" height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect><path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" class="highcharts-button-symbol" stroke="#666666" stroke-width="3"></path><text x="0" style="font-weight:normal;color:#333333;fill:#333333;" y="12"></text></g><g class="highcharts-legend" transform="translate(117,206)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="66" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-area-series highcharts-color-0 highcharts-series-0" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">HIXX</text><rect x="2" y="4" width="12" height="12" fill="#7cb5ec" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="69.18627450980392" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>0</tspan></text><text x="178.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>2.5</tspan></text><text x="286.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>5</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="176" opacity="1"><tspan>0</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="136" opacity="1"><tspan>10</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="95" opacity="1"><tspan>20</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="55" opacity="1"><tspan>30</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1"><tspan>40</tspan></text></g><text x="290" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="245">Highcharts.com</text><g class="highcharts-label highcharts-tooltip highcharts-color-0" style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(5,-9999)" opacity="0" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#7cb5ec" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size: 10px">5</tspan><tspan x="8" dy="15">HIXX ´ÔÀÇ warheads in 5Á¡ ¸Å±ä ¼ö : </tspan><tspan style="font-weight:bold" dx="0">10 104</tspan></text></g></svg></div></div>
+								<div id="star-container" style="min-width: 48%; height: 350px; max-width:1000px; padding-bottom:30px; margin: 0 auto" data-highcharts-chart="0"><div id="highcharts-bzc4q92-0" class="highcharts-container " style="position: relative; overflow: hidden; width: 300px; height: 250px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><desc>Created with Highcharts 5.0.9</desc><defs><clipPath id="highcharts-bzc4q92-1"><rect x="0" y="0" width="223" height="162" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="300" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="67" y="10" width="223" height="162"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 68.5 10 L 68.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 178.5 10 L 178.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 287.5 10 L 287.5 172" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 172.5 L 290 172.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 132.5 L 290 132.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 91.5 L 290 91.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 51.5 L 290 51.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 9.5 L 290 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="67" y="10" width="223" height="162"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 68.5 172 L 68.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 178.5 172 L 178.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 287.5 172 L 287.5 182" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 67 172.5 L 290 172.5"></path></g><g class="highcharts-axis highcharts-yaxis "><text x="28.046875" text-anchor="middle" transform="translate(0,0) rotate(270 28.046875 91)" class="highcharts-axis-title" style="color:#666666;fill:#666666;" y="91">Values</text><path fill="none" class="highcharts-axis-line" d="M 67 10 L 67 172"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-area-series highcharts-color-0 " transform="translate(67,10) scale(1 1)" clip-path="url(#highcharts-bzc4q92-1)"><path fill="rgba(124,181,236,0.75)" d="M 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788 L 220.8137254902 162 L 177.08823529412 162 L 133.36274509804 162 L 89.637254901961 162 L 45.911764705882 162 L 2.1862745098039 162" class="highcharts-area"></path><path fill="none" d="M 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788" class="highcharts-graph" stroke="#7cb5ec" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -7.8137254901961 52.82820000000001 L 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788 L 230.8137254902 121.0788" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-area-series highcharts-color-0 highcharts-tracker " transform="translate(67,10) scale(1 1)" clip-path="none"><path fill="#7cb5ec" d="M 220 121.0788 A 0 0 0 1 1 220 121.0788 Z" class="highcharts-halo highcharts-color-0" fill-opacity="0.25"></path><path fill="#7cb5ec" d="M 224 121.0788 A 4 4 0 1 1 223.99999800000018 121.07480000066667 Z" stroke="#ffffff" stroke-width="1" visibility="hidden"></path></g></g><g class="highcharts-button highcharts-contextbutton" style="cursor:pointer;" stroke-linecap="round" transform="translate(266,10)"><title>Chart context menu</title><rect fill="#ffffff" class=" highcharts-button-box" x="0.5" y="0.5" width="24" height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect><path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" class="highcharts-button-symbol" stroke="#666666" stroke-width="3"></path><text x="0" style="font-weight:normal;color:#333333;fill:#333333;" y="12"></text></g><g class="highcharts-legend" transform="translate(117,206)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="66" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-area-series highcharts-color-0 highcharts-series-0" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">HIXX</text><rect x="2" y="4" width="12" height="12" fill="#7cb5ec" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="69.18627450980392" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>0</tspan></text><text x="178.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>2.5</tspan></text><text x="286.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>5</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="176" opacity="1"><tspan>0</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="136" opacity="1"><tspan>10</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="95" opacity="1"><tspan>20</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="55" opacity="1"><tspan>30</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1"><tspan>40</tspan></text></g><text x="290" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="245">Highcharts.com</text><g class="highcharts-label highcharts-tooltip highcharts-color-0" style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(5,-9999)" opacity="0" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#7cb5ec" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size: 10px">5</tspan><tspan x="8" dy="15">HIXX ë‹˜ì˜ warheads in 5ì  ë§¤ê¸´ ìˆ˜ : </tspan><tspan style="font-weight:bold" dx="0">10 104</tspan></text></g></svg></div></div>
 								
 								<h3 style="text-align: center;"> Hey, HIXX. You gave stars too poor!!</h3>
 								
@@ -650,7 +652,7 @@
 					
 						<!-- section title -->
 						<div class="title text-center">
-							<h2>¿©ÇàÁö <span class="color">ÃßÃµ</span></h2>
+							<h2>ì—¬í–‰ì§€ <span class="color">ì¶”ì²œ</span></h2>
 							  
 							<div class="border"></div>
 						</div>
@@ -660,9 +662,9 @@
 						<div class="portfolio-filter clearfix">
 							<ul class="text-center">
 							    <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".app">µ¿ÇØ</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".web">¹«ÁÖ</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">»ïÃ´</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".app">ë™í•´</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".web">ë¬´ì£¼</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">ì‚¼ì²™</a></li>
 								<li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">Illustrator</a></li>
 							</ul>
 						</div>
@@ -681,7 +683,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/CD-rock.jpg" 
 						data-title="East Sea" 
-						data-description="ÃĞ´ë¹ÙÀ§sdafasdfsadfsdafdsaf">
+						data-description="ì´›ëŒ€ë°”ìœ„sdafasdfsadfsdafdsaf">
 							<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
@@ -755,7 +757,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/deogyu.jpg" 
 						data-title="Mojoo" 
-						data-description="´öÀ¯»ê.">
+						data-description="ë•ìœ ì‚°.">
 							<img src="img/travel-recommend/deogyu.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
@@ -773,7 +775,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/Hwanseon.jpg" 
 						data-title="Samcheok" 
-						data-description="È¯¼±±¼.">
+						data-description="í™˜ì„ êµ´.">
 							<img src="img/travel-recommend/Hwanseon.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
@@ -790,7 +792,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/Janghohang.jpg" 
 						data-title="Samcheok" 
-						data-description="ÀåÈ£Ç×.">
+						data-description="ì¥í˜¸í•­.">
 							<img src="img/travel-recommend/Janghohang.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
@@ -807,7 +809,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/CK-cave.jpg" 
 						data-title="East Sea" 
-						data-description="Ãµ°îµ¿±¼.">
+						data-description="ì²œê³¡ë™êµ´.">
 							<img src="img/travel-recommend/CK-cave.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
@@ -824,7 +826,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/mdysresort.jpg" 
 						data-title="Mojoo" 
-						data-description="¹«ÁÖ ¸®Á¶Æ®.">
+						data-description="ë¬´ì£¼ ë¦¬ì¡°íŠ¸.">
 							<img src="img/travel-recommend/mdysresort.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
@@ -841,7 +843,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/Jukseoru.jpg" 
 						data-title="Samcheok" 
-						data-description="Á×¼­·ç.">
+						data-description="ì£½ì„œë£¨.">
 							<img src="img/travel-recommend/Jukseoru.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
@@ -858,7 +860,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/MH-lighthouse.jpg" 
 						data-title="East Sea" 
-						data-description="¹¬È£µî´ë.">
+						data-description="ë¬µí˜¸ë“±ëŒ€.">
 							<img src="img/travel-recommend/MH-lighthouse.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
@@ -875,7 +877,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/raje.jpg" 
 						data-title="Mojoo" 
-						data-description="¶óÁ¦Åë¹®.">
+						data-description="ë¼ì œí†µë¬¸.">
 							<img src="img/travel-recommend/raje.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
@@ -892,7 +894,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/wine-cave.jpg" 
 						data-title="Mojoo" 
-						data-description="¿ÍÀÎµ¿±¼.">
+						data-description="ì™€ì¸ë™êµ´.">
 							<img src="img/travel-recommend/wine-cave.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
@@ -909,7 +911,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/oceanrailbike.jpg" 
 						data-title="Samcheok" 
-						data-description="»ïÃ´ ·¹ÀÏ¹ÙÀÌÅ©.">
+						data-description="ì‚¼ì²™ ë ˆì¼ë°”ì´í¬.">
 							<img src="img/travel-recommend/oceanrailbike.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
@@ -926,7 +928,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/eastsea.jpg" 
 						data-title="East Sea" 
-						data-description="µ¿ÇØ¹Ù´Ù.">
+						data-description="ë™í•´ë°”ë‹¤.">
 							<img src="img/travel-recommend/eastsea.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
@@ -947,7 +949,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/CD-rock.jpg" 
 						data-title="East Sea" 
-						data-description="ÃĞ´ë¹ÙÀ§">
+						data-description="ì´›ëŒ€ë°”ìœ„">
 							<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
@@ -965,7 +967,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/deogyu.jpg" 
 						data-title="Mojoo" 
-						data-description="´öÀ¯»ê.">
+						data-description="ë•ìœ ì‚°.">
 							<img src="img/travel-recommend/deogyu.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
@@ -982,7 +984,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/Hwanseon.jpg" 
 						data-title="Samcheok" 
-						data-description="È¯¼±±¼.">
+						data-description="í™˜ì„ êµ´.">
 							<img src="img/travel-recommend/Hwanseon.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
@@ -999,7 +1001,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/Janghohang.jpg" 
 						data-title="Samcheok" 
-						data-description="ÀåÈ£Ç×.">
+						data-description="ì¥í˜¸í•­.">
 							<img src="img/travel-recommend/Janghohang.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
@@ -1016,7 +1018,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/CK-cave.jpg" 
 						data-title="East Sea" 
-						data-description="Ãµ°îµ¿±¼.">
+						data-description="ì²œê³¡ë™êµ´.">
 							<img src="img/travel-recommend/CK-cave.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
@@ -1033,7 +1035,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/mdysresort.jpg" 
 						data-title="Mojoo" 
-						data-description="¹«ÁÖ ¸®Á¶Æ®.">
+						data-description="ë¬´ì£¼ ë¦¬ì¡°íŠ¸.">
 							<img src="img/travel-recommend/mdysresort.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
@@ -1050,7 +1052,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/Jukseoru.jpg" 
 						data-title="Samcheok" 
-						data-description="Á×¼­·ç.">
+						data-description="ì£½ì„œë£¨.">
 							<img src="img/travel-recommend/Jukseoru.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
@@ -1067,7 +1069,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/MH-lighthouse.jpg" 
 						data-title="East Sea" 
-						data-description="¹¬È£µî´ë.">
+						data-description="ë¬µí˜¸ë“±ëŒ€.">
 							<img src="img/travel-recommend/MH-lighthouse.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
@@ -1084,7 +1086,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/raje.jpg" 
 						data-title="Mojoo" 
-						data-description="¶óÁ¦Åë¹®.">
+						data-description="ë¼ì œí†µë¬¸.">
 							<img src="img/travel-recommend/raje.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
@@ -1101,7 +1103,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/wine-cave.jpg" 
 						data-title="Mojoo" 
-						data-description="¿ÍÀÎµ¿±¼.">
+						data-description="ì™€ì¸ë™êµ´.">
 							<img src="img/travel-recommend/wine-cave.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
@@ -1118,7 +1120,7 @@
 						<a href="javascript:void(0)" 
 						data-largesrc="img/travel-recommend/oceanrailbike.jpg" 
 						data-title="Samcheok" 
-						data-description="»ïÃ´ ·¹ÀÏ¹ÙÀÌÅ©.">
+						data-description="ì‚¼ì²™ ë ˆì¼ë°”ì´í¬.">
 							<img src="img/travel-recommend/oceanrailbike.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
@@ -1136,7 +1138,7 @@
 							<a href="javascript:void(0)" 
 							data-largesrc="img/travel-recommend/eastsea.jpg" 
 							data-title="East Sea" 
-							data-description="µ¿ÇØ¹Ù´Ù.">
+							data-description="ë™í•´ë°”ë‹¤.">
 								<img src="img/travel-recommend/eastsea.jpg" alt="HIXX">
 								<div class="hover-mask">
 									<h3></h3>
@@ -1153,7 +1155,7 @@
 				
 				<div class="all-post text-center">
 					
-					<a id="more-button" class="btn btn-transparent">´õ º¸±â</a>
+					<a id="more-button" class="btn btn-transparent">ë” ë³´ê¸°</a>
 				</div>
 				
 			</div>  <!-- portfolio items wrapper -->
