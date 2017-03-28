@@ -28,8 +28,7 @@ public class LoginController extends HttpServlet {
 		
 		String formUsername = request.getParameter("form-username");
 		String formPassword = request.getParameter("form-password");
-		System.out.println(formUsername);
-		System.out.println(formPassword);
+		
 		MemberDao memberDao = new MySQLMemberDao();
 		Member member = memberDao.get(formUsername);
 		int validate = 0;

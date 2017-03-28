@@ -37,7 +37,9 @@ public class MySQLCityScoreDao implements CityScoreDao {
 	@Override
 	public int[] cityrank() {
 		String sql = "SELECT COUNTRY_CODE CCODE, COUNT(COUNTRY_CODE) CCOUNT FROM CITYSCORE GROUP BY COUNTRY_CODE ORDER BY CCOUNT DESC";
-		int cityRank[] = new int[51];
+		int cnum = 51;int imsi = 0;
+		int cityCount[] = new int[cnum+1];
+		int cityRank[] = new int[cnum+1];
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql://211.238.142.84/hixx?autoReconnect=true&amp;useSSL=false&characterEncoding=UTF-8";
@@ -46,8 +48,20 @@ public class MySQLCityScoreDao implements CityScoreDao {
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
 			
-			while(rs.next()) cityRank[Integer.parseInt(rs.getString("CCODE"))] = Integer.parseInt(rs.getString("CCOUNT"));
-		
+			while(rs.next()) {
+				cityRank[Integer.parseInt(rs.getString("CCODE"))] = Integer.parseInt(rs.getString("CCOUNT"));
+			}
+			
+			/*for(int i=1;i<=cnum;i++) {
+				for(int j=i;j<cnum;j++) {
+					if(cityCount[i] < cityCount[j]) {
+						imsi = cityCount[i];
+						cityCount[i] = cityCount[j];
+						cityCount[j] = imsi;
+						
+					}
+				}
+			}*/
 			System.out.println(cityRank[0]);
 			System.out.println(cityRank[1]);
 			System.out.println(cityRank[2]);
