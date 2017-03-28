@@ -67,6 +67,7 @@
                             <c:if test="${validate == 0}">
                             	<script>
                             		alert("회원가입이 성공적으로 이루어졌습니다!");
+                            		location.href ="login";
                             	</script>
                             </c:if>
                             <c:if test="${validate == 1}">

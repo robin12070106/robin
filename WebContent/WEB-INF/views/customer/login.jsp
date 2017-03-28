@@ -138,7 +138,7 @@
 		<script>
 			var id = "<%=request.getSession().getAttribute("id")%>";
 			alert (id + "님 로그인을 환영합니다");
-		 	location.href = "defaultRating";
+		 	location.href = "default-rating";
 		</script>
 	</c:if>
 

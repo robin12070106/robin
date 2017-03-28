@@ -3,20 +3,15 @@ package com.hixx.web.data.entity;
 import java.util.Date;
 
 public class Member {
-	private int code;
+	
 	private String id;
 	private String pwd;
 	private String gender;
 	private int age;
 	private String birthdate;
 	private Date regDate;
+	private int ticket;
 	
-	public int getCode() {
-		return code;
-	}
-	public void setCode(int code) {
-		this.code = code;
-	}
 	public String getId() {
 		return id;
 	}
@@ -53,5 +48,10 @@ public class Member {
 	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
 	}
-	
+	public int getTicket() {
+		return ticket;
+	}
+	public void setTicket(int ticket) {
+		this.ticket = ticket;
+	}
 }

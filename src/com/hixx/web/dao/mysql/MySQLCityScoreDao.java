@@ -22,6 +22,9 @@ public class MySQLCityScoreDao implements CityScoreDao {
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
 			if(rs.next())  result = Integer.parseInt(rs.getString("NUM"));
+			rs.close();
+			st.close();
+			con.close();
 			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
@@ -29,6 +32,58 @@ public class MySQLCityScoreDao implements CityScoreDao {
 			e.printStackTrace();
 		}
 		return result;
+	}
+
+	@Override
+	public int[] cityrank() {
+		String sql = "SELECT COUNTRY_CODE CCODE, COUNT(COUNTRY_CODE) CCOUNT FROM CITYSCORE GROUP BY COUNTRY_CODE ORDER BY CCOUNT DESC";
+		int cityRank[] = new int[51];
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://211.238.142.84/hixx?autoReconnect=true&amp;useSSL=false&characterEncoding=UTF-8";
+			Connection con = DriverManager.getConnection(url, "sjlee", "6664");
+			
+			Statement st = con.createStatement();
+			ResultSet rs = st.executeQuery(sql);
+			
+			while(rs.next()) cityRank[Integer.parseInt(rs.getString("CCODE"))] = Integer.parseInt(rs.getString("CCOUNT"));
+		
+			System.out.println(cityRank[0]);
+			System.out.println(cityRank[1]);
+			System.out.println(cityRank[2]);
+			System.out.println(cityRank[3]);
+			System.out.println(cityRank[4]);
+			System.out.println(cityRank[5]);
+			System.out.println(cityRank[6]);
+			System.out.println(cityRank[7]);
+			System.out.println(cityRank[8]);
+			System.out.println(cityRank[9]);
+			System.out.println(cityRank[10]);
+			System.out.println(cityRank[11]);
+			System.out.println(cityRank[12]);
+			System.out.println(cityRank[13]);
+			
+			/*for(int i : cityRank) {
+				if (cityRank[i] == 0) cityRank[i] = 0;
+			}*/
+			
+			rs.close();
+			st.close();
+			con.close();
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+
+	@Override
+	public int[] citypass() {
+		
+		return null;
 	}
 
 }

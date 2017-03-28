@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.hixx.web.dao.mysql.MySQLCityScoreDao;
+import com.hixx.web.dao.mysql.MySQLMemberDao;
 import com.hixx.web.data.dao.CityScoreDao;
+import com.hixx.web.data.dao.MemberDao;
 
 @WebServlet("/default-rating")
 public class DefaultRatingController extends HttpServlet {
@@ -17,21 +19,38 @@ public class DefaultRatingController extends HttpServlet {
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = (String)request.getSession().getAttribute("id");
-		CityScoreDao cityScoreDao = new MySQLCityScoreDao();
-		int result = cityScoreDao.init(id);
-		request.setAttribute("result", result);
+		MemberDao memberDao = new MySQLMemberDao();
 		
-		if(result <10) {
+		System.out.println(memberDao.get(id).getTicket());
+		System.out.println(memberDao.get(id).getId());
+		System.out.println(memberDao.get(id).getPwd());
+		
+		if(memberDao.get(id).getTicket() != 1) {		
+			CityScoreDao cityScoreDao = new MySQLCityScoreDao();
+			int result = cityScoreDao.init(id);
+			request.setAttribute("result", result);
 			
-			request.getRequestDispatcher("/WEB-INF/views/customer/default-rating.jsp").forward(request, response);
+			if(result <10) {
+				int cityRank[] = cityScoreDao.cityrank(); 
+				int cityPass[] = cityScoreDao.citypass();
+				request.setAttribute("cityRank", cityRank);
+				request.setAttribute("cityPass", cityPass);
+				request.getRequestDispatcher("/WEB-INF/views/customer/default-rating.jsp").forward(request, response);
+			}
+			
+			else {
+				memberDao.ticketAdd(id);
+				response.sendRedirect("index");
+			}
+			
 		}
 		else {
-			System.out.println("끝");
+			response.sendRedirect("index");
 		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String city = request.getParameter("city");
+		String ccode = request.getParameter("city-code");
 		String trate = request.getParameter("city-rate");
 		String frate = request.getParameter("food-rate");
 		String srate = request.getParameter("sightsee-rate");
@@ -39,8 +58,7 @@ public class DefaultRatingController extends HttpServlet {
 		
 		
 		
-		
-		
+		response.sendRedirect("default-rating");
 	}
 
 }

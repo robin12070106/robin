@@ -1,7 +1,6 @@
 package com.hixx.web.controller.joinus;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -29,17 +28,18 @@ public class LoginController extends HttpServlet {
 		
 		String formUsername = request.getParameter("form-username");
 		String formPassword = request.getParameter("form-password");
-		
+		System.out.println(formUsername);
+		System.out.println(formPassword);
 		MemberDao memberDao = new MySQLMemberDao();
 		Member member = memberDao.get(formUsername);
 		int validate = 0;
-	
+		System.out.println(member.getPwd());
 		if (member != null && member.getPwd().equals(formPassword)) {
 			validate = 1;
 			HttpSession session = request.getSession();
 			session.setAttribute("id", formUsername);
 		}
-
+		
 		request.setAttribute("validate", validate);
 		request.getRequestDispatcher("/WEB-INF/views/customer/login.jsp").forward(request, response);
 	}
