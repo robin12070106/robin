@@ -36,7 +36,7 @@
 <!-- Owl Carousel -->
 <link rel="stylesheet" href="css/owl.carousel.css">
 <!-- Grid Component css -->
-<link rel="stylesheet" href="css/component.css">
+<link rel="stylesheet" href="css/account/star-rate-component.css">
 <!-- Slit Slider css -->
 <link rel="stylesheet" href="css/slit-slider.css">
 <!-- Main Stylesheet -->
@@ -172,9 +172,19 @@
 </head>
 
 <body id="body">
-	<tr>
-		<th>진행률 : ${result}/10 <progress value = "${result}" max = "10" id = "progress-bar"> </progress></th>
-	</tr>
+
+	<div class="logout">
+		
+		<c:if test="${not empty sessionScope.id }">        
+        <span>${sessionScope.id } 님 환영합니다&nbsp;&nbsp;</span>        
+        <a href="logout">로그아웃</a>                
+        </c:if>
+        
+	</div>
+
+	<div class="progress">
+		<p>진행률 : ${result}/10 <progress value = "${result}" max = "10" id = "progress-bar"> </progress></p>
+	</div>
 	<!--
 	    Start Preloader
 	    ==================================== -->
@@ -280,11 +290,7 @@
 				</li>
 			</ul>
 
-			<div class="all-post text-center">
-				<input id="more-button" type="button" class="btn btn-transparent"  value="더보기"/>	
-			</div>
-
-			<!-- portfolio items wrapper -->
+		 <!-- portfolio items wrapper -->
 		</div>
 	</section>
 
