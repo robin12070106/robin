@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -8,7 +9,6 @@
 <html class="no-js">
 <!--<![endif]-->
 <head>
-
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description"
@@ -78,12 +78,53 @@
 	ga('send', 'pageview');
 </script>
 
+<%-- 	<c:forEach var = "v" items = "${cityHanto}">
+		
+		</c:forEach>
+	 --%>
 
+<!-- 
+<script>
+	var cnum = 51;
+	var sw=0;
+	var name = [
+		<c:forEach var="a" items="${cityHanto}">			
+			<c:if test="sw != cnum">"</c:if>
+			${a}
+			<c:if test="sw != cnum">"</c:if>
+			<c:if test="sw != cnum-1">,</c:if>
+			sw++;
+		</c:forEach>		
+	];
+</script> -->
 
+<script>
+	var name = new Array();
+	var sw=0;
+	<c:forEach var="a" items="${cityHanto}">
+		name[0] = "${a}";
+	</c:forEach>
+</script>
+
+<!-- http://blog.naver.com/PostView.nhn?blogId=iopqwas&logNo=140147841819
+ --> 
+<%--  <c:forEach var="a" items="${cityHanto}">
+			<c:if test="sw != cnum">"</c:if>
+			${a}
+			<c:if test="sw != cnum">"</c:if>
+			<c:if test="sw != cnum-1">,</c:if>
+			sw++;
+</c:forEach>	
+ --%> 		
+		
 <script>
 	function onChange() {
 		var text = document.getElementById("urlid").value;
-		var name = new Array("서울", "부산", "대전", "대구르르", "대구", "서울우우울", "서울우울해", "부산아아아산", "대전어어전");
+/* 		var name = ["서울","부산","대전"]; */
+	<%-- 	var name = %{cityHanto};
+		/* var name = new Array("서울", "부산", "대전", "대구르르", "대구", "서울우우울", "서울우울해", "부산아아아산", "대전어어전"); */
+		var name2 = <%request.getAttribute("cityHanto");%>;
+	 --%>	
 		var sw = 0;
 		var strHtml = "";
 
@@ -175,7 +216,11 @@
 		<div class="portfolio-item-wrapper wow fadeInUp"
 			data-wow-duration="500ms">
 			<ul id="og-grid" class="og-grid">
-
+			
+			<%-- 여기여기여기여기여기	<c:forEach var="v" items = "${cityRank}">
+					<td>${v}</td>
+				</c:forEach>
+			 --%>
 				<%for(int i=0;i<10;i++){ %>
 				<li class="mix app">
 				<a href="" class="city" data-toggle="modal" data-target="#myModal" data-id="Seoul<%=i%>">  
