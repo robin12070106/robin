@@ -589,17 +589,17 @@ h1, h2, h3, h4, h5, h6 {
 			transform: rotateY(180deg) scale(0.5,0.5);	
 }
 
-.hover-mask h3 {
+/* .hover-mask h3 {
 	color: #2E2E2E;
 	font-size: 20px;
 	position: relative;
 	text-transform: uppercase;
 	top: 110px;
-}
+} */
 
 .hover-mask span {
-	border: 2px solid #2E2E2E;
-	border-radius: 50px;
+	/* border: 2px solid #2E2E2E;
+	border-radius: 50px; */
 	color: #2E2E2E;
 	display: inline-block;
 	height: 50px;
