@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -8,7 +9,6 @@
 <html class="no-js">
 <!--<![endif]-->
 <head>
-
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description"
@@ -36,7 +36,7 @@
 <!-- Owl Carousel -->
 <link rel="stylesheet" href="css/owl.carousel.css">
 <!-- Grid Component css -->
-<link rel="stylesheet" href="css/component.css">
+<link rel="stylesheet" href="css/account/star-rate-component.css">
 <!-- Slit Slider css -->
 <link rel="stylesheet" href="css/slit-slider.css">
 <!-- Main Stylesheet -->
@@ -78,12 +78,27 @@
 	ga('send', 'pageview');
 </script>
 
-
-
+<script>
+	var han = new Array();
+	var pass = new Array();
+	var rank = new Array();
+	<%
+		String cityHanto[] = (String[])request.getAttribute("cityHanto");
+		int cityPassto[] = (int[])request.getAttribute("cityPassto");
+		int cityRank[] = (int[])request.getAttribute("cityRank");
+	%>
+	
+	<%for (int i=0;i<cityHanto.length;i++) {%>
+		han[<%=i%>] =  '<%=cityHanto[i]%>';
+		pass[<%=i%>] =  <%=cityPassto[i]%>;
+		rank[<%=i%>] =  <%=cityRank[i]%>;
+	<%};%>
+	
+</script> 
+		
 <script>
 	function onChange() {
 		var text = document.getElementById("urlid").value;
-		var name = new Array("서울", "부산", "대전", "대구르르", "대구", "서울우우울", "서울우울해", "부산아아아산", "대전어어전");
 		var sw = 0;
 		var strHtml = "";
 
@@ -94,11 +109,11 @@
 		strHtml += "<td style = 'width:1%'>도시명</td>";
 		strHtml += "</td>";
 
-		for (var i = 0; i < name.length; i++) {
-			if (name[i].substring(0, text.length) == text) {
+		for (var i = 0; i < han.length; i++) {
+			if (han[i].substring(0, text.length) == text) {
 				strHtml += "<tr align='center'>";
 				strHtml += "<td>" + parseInt(sw + 1) + "</td>";
-				strHtml += "<td>" + name[i] + "</td>";
+				strHtml += "<td>" + han[i] + "</td>";
 				strHtml += "</tr>";
 				sw++;
 			}
@@ -109,6 +124,8 @@
 		document.getElementById("urlid_confirm").innerHTML = strHtml;
 	}
 </script>
+
+
 
 <script>
 	window.addEventListener("onload",function(){
@@ -131,9 +148,19 @@
 </head>
 
 <body id="body">
-	<tr>
-		<th>진행률 : ${result}/10 <progress value = "${result}" max = "10" id = "progress-bar"> </progress></th>
-	</tr>
+
+	<div class="logout">
+		
+		<c:if test="${not empty sessionScope.id }">        
+        <span>${sessionScope.id } 님 환영합니다&nbsp;&nbsp;</span>        
+        <a href="logout">로그아웃</a>                
+        </c:if>
+        
+	</div>
+
+	<div class="progress">
+		<p>진행률 : ${result}/10 <progress value = "${result}" max = "10" id = "progress-bar"> </progress></p>
+	</div>
 	<!--
 	    Start Preloader
 	    ==================================== -->
@@ -175,19 +202,22 @@
 		<div class="portfolio-item-wrapper wow fadeInUp"
 			data-wow-duration="500ms">
 			<ul id="og-grid" class="og-grid">
-
+				<script>
+					var pop = "헐헐헐";
+				</script>
 				<%for(int i=0;i<10;i++){ %>
-				<li class="mix app">
-				<a href="" class="city" data-toggle="modal" data-target="#myModal" data-id="Seoul<%=i%>">  
-					<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
-						<div class="hover-mask">
-							<h3></h3>						
-							<span>
-						 		<i class="fa fa-plus fa-2x"></i>
-							</span>
-						</div>
-				</a> 		
-				</li>
+					<li class="mix app">
+					<a href="" class="city" data-toggle="modal" data-target="#myModal" data-id="&{han[<%=i%>]};">  
+						<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
+							<div class="hover-mask">
+								<h3></h3>						
+								<span>
+									&{han[<%=i%>]};
+							 		<i class="fa fa-plus fa-2x"></i>
+								</span>
+							</div>
+					</a> 		
+					</li>
 				<%} %>
 				
 				
@@ -235,11 +265,7 @@
 				</li>
 			</ul>
 
-			<div class="all-post text-center">
-				<input id="more-button" type="button" class="btn btn-transparent"  value="더보기"/>	
-			</div>
-
-			<!-- portfolio items wrapper -->
+		 <!-- portfolio items wrapper -->
 		</div>
 	</section>
 
