@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+/* ------------------ Common---------------------------------------- */
+.hidden {
+	display: none;
+}
+
+.clearfix {  /* float를 초기화해주는 clearfix이다. 마지막 컨테이너에 넣어줌. */
+  overflow: auto;
+  zoom: 1;
+}
+
+/* ------------------ 모달 ---------------------------------------- */
+.modal-content {
+	border: none;
+	border-radius: 8px;
+}
+
+.modal {
+	margin-top: 100px;
+}
+
+.modal-body {
+	background: no-repeat center;
+	border-radius: 8px;
+	min-height: 500px;
+}
+
+.modal-header {
+	
+}
+
+
+#star-rate{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-height: 280px;
+    height: 100%;
+    position: relative;
+}
+
+
+#star-rate-title {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid black;
+}

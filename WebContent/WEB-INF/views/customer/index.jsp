@@ -42,12 +42,13 @@
         <!-- Modal star rate -->
         <link rel="stylesheet" href="css/account/modal-star-rate.css">
 
+
 		<!-- My Page -->
+		<!-- <link href="css/NewFile.css" type="text/css" rel="stylesheet" /> -->
 		<link href="css/chartModal.css" type="text/css" rel="stylesheet" />
 		<script src="js/pieOption.js"></script>
 		<script src="js/chart1.js"></script>
-		<script src="js/chartExporting.js"></script>
-
+		
 		<!--
 		Google Font
 		=========================== -->                    
@@ -274,7 +275,7 @@
 							    <span class="close">&times;</span>
 							    
 								
-								<div id="star-container" style="min-width: 48%; height: 350px; max-width:1000px; padding-bottom:30px; margin: 0 auto" data-highcharts-chart="0"><div id="highcharts-bzc4q92-0" class="highcharts-container " style="position: relative; overflow: hidden; width: 300px; height: 250px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><desc>Created with Highcharts 5.0.9</desc><defs><clipPath id="highcharts-bzc4q92-1"><rect x="0" y="0" width="223" height="162" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="300" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="67" y="10" width="223" height="162"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 68.5 10 L 68.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 178.5 10 L 178.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 287.5 10 L 287.5 172" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 172.5 L 290 172.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 132.5 L 290 132.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 91.5 L 290 91.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 51.5 L 290 51.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 9.5 L 290 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="67" y="10" width="223" height="162"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 68.5 172 L 68.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 178.5 172 L 178.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 287.5 172 L 287.5 182" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 67 172.5 L 290 172.5"></path></g><g class="highcharts-axis highcharts-yaxis "><text x="28.046875" text-anchor="middle" transform="translate(0,0) rotate(270 28.046875 91)" class="highcharts-axis-title" style="color:#666666;fill:#666666;" y="91">Values</text><path fill="none" class="highcharts-axis-line" d="M 67 10 L 67 172"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-area-series highcharts-color-0 " transform="translate(67,10) scale(1 1)" clip-path="url(#highcharts-bzc4q92-1)"><path fill="rgba(124,181,236,0.75)" d="M 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788 L 220.8137254902 162 L 177.08823529412 162 L 133.36274509804 162 L 89.637254901961 162 L 45.911764705882 162 L 2.1862745098039 162" class="highcharts-area"></path><path fill="none" d="M 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788" class="highcharts-graph" stroke="#7cb5ec" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -7.8137254901961 52.82820000000001 L 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788 L 230.8137254902 121.0788" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-area-series highcharts-color-0 highcharts-tracker " transform="translate(67,10) scale(1 1)" clip-path="none"><path fill="#7cb5ec" d="M 220 121.0788 A 0 0 0 1 1 220 121.0788 Z" class="highcharts-halo highcharts-color-0" fill-opacity="0.25"></path><path fill="#7cb5ec" d="M 224 121.0788 A 4 4 0 1 1 223.99999800000018 121.07480000066667 Z" stroke="#ffffff" stroke-width="1" visibility="hidden"></path></g></g><g class="highcharts-button highcharts-contextbutton" style="cursor:pointer;" stroke-linecap="round" transform="translate(266,10)"><title>Chart context menu</title><rect fill="#ffffff" class=" highcharts-button-box" x="0.5" y="0.5" width="24" height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect><path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" class="highcharts-button-symbol" stroke="#666666" stroke-width="3"></path><text x="0" style="font-weight:normal;color:#333333;fill:#333333;" y="12"></text></g><g class="highcharts-legend" transform="translate(117,206)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="66" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-area-series highcharts-color-0 highcharts-series-0" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">HIXX</text><rect x="2" y="4" width="12" height="12" fill="#7cb5ec" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="69.18627450980392" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>0</tspan></text><text x="178.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>2.5</tspan></text><text x="286.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>5</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="176" opacity="1"><tspan>0</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="136" opacity="1"><tspan>10</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="95" opacity="1"><tspan>20</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="55" opacity="1"><tspan>30</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1"><tspan>40</tspan></text></g><text x="290" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="245">Highcharts.com</text><g class="highcharts-label highcharts-tooltip highcharts-color-0" style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(5,-9999)" opacity="0" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#7cb5ec" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size: 10px">5</tspan><tspan x="8" dy="15">HIXX 님의 warheads in 5점 매긴 수 : </tspan><tspan style="font-weight:bold" dx="0">10 104</tspan></text></g></svg></div></div>
+								<div id="star-container" style="min-width: 80%; height: 600px; max-width:1000px; padding-bottom:30px; margin: 0 auto" data-highcharts-chart="0"><div id="highcharts-bzc4q92-0" class="highcharts-container " style="position: relative; overflow: hidden; width: 300px; height: 250px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><desc>Created with Highcharts 5.0.9</desc><defs><clipPath id="highcharts-bzc4q92-1"><rect x="0" y="0" width="223" height="162" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="300" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="67" y="10" width="223" height="162"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 68.5 10 L 68.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 178.5 10 L 178.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 287.5 10 L 287.5 172" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 172.5 L 290 172.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 132.5 L 290 132.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 91.5 L 290 91.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 51.5 L 290 51.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 67 9.5 L 290 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="67" y="10" width="223" height="162"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 68.5 172 L 68.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 178.5 172 L 178.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 287.5 172 L 287.5 182" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 67 172.5 L 290 172.5"></path></g><g class="highcharts-axis highcharts-yaxis "><text x="28.046875" text-anchor="middle" transform="translate(0,0) rotate(270 28.046875 91)" class="highcharts-axis-title" style="color:#666666;fill:#666666;" y="91">Values</text><path fill="none" class="highcharts-axis-line" d="M 67 10 L 67 172"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-area-series highcharts-color-0 " transform="translate(67,10) scale(1 1)" clip-path="url(#highcharts-bzc4q92-1)"><path fill="rgba(124,181,236,0.75)" d="M 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788 L 220.8137254902 162 L 177.08823529412 162 L 133.36274509804 162 L 89.637254901961 162 L 45.911764705882 162 L 2.1862745098039 162" class="highcharts-area"></path><path fill="none" d="M 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788" class="highcharts-graph" stroke="#7cb5ec" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -7.8137254901961 52.82820000000001 L 2.1862745098039 52.82820000000001 L 45.911764705882 48.9564 L 89.637254901961 40.5 L 133.36274509804 120.0501 L 177.08823529412 120.30525 L 220.8137254902 121.0788 L 230.8137254902 121.0788" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-area-series highcharts-color-0 highcharts-tracker " transform="translate(67,10) scale(1 1)" clip-path="none"><path fill="#7cb5ec" d="M 220 121.0788 A 0 0 0 1 1 220 121.0788 Z" class="highcharts-halo highcharts-color-0" fill-opacity="0.25"></path><path fill="#7cb5ec" d="M 224 121.0788 A 4 4 0 1 1 223.99999800000018 121.07480000066667 Z" stroke="#ffffff" stroke-width="1" visibility="hidden"></path></g></g><g class="highcharts-button highcharts-contextbutton" style="cursor:pointer;" stroke-linecap="round" transform="translate(266,10)"><title>Chart context menu</title><rect fill="#ffffff" class=" highcharts-button-box" x="0.5" y="0.5" width="24" height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect><path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" class="highcharts-button-symbol" stroke="#666666" stroke-width="3"></path><text x="0" style="font-weight:normal;color:#333333;fill:#333333;" y="12"></text></g><g class="highcharts-legend" transform="translate(117,206)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="66" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-area-series highcharts-color-0 highcharts-series-0" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">HIXX</text><rect x="2" y="4" width="12" height="12" fill="#7cb5ec" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="69.18627450980392" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>0</tspan></text><text x="178.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>2.5</tspan></text><text x="286.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>5</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="176" opacity="1"><tspan>0</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="136" opacity="1"><tspan>10</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="95" opacity="1"><tspan>20</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="55" opacity="1"><tspan>30</tspan></text><text x="52" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1"><tspan>40</tspan></text></g><text x="290" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="245">Highcharts.com</text><g class="highcharts-label highcharts-tooltip highcharts-color-0" style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(5,-9999)" opacity="0" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 264.5 0.5 C 267.5 0.5 267.5 0.5 267.5 3.5 L 267.5 17 273.5 23 267.5 29 267.5 44.5 C 267.5 47.5 267.5 47.5 264.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#7cb5ec" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size: 10px">5</tspan><tspan x="8" dy="15">HIXX 님의 warheads in 5점 매긴 수 : </tspan><tspan style="font-weight:bold" dx="0">10 104</tspan></text></g></svg></div></div>
 								
 								<h3 style="text-align: center;"> Hey, HIXX. You gave stars too poor!!</h3>
 								
@@ -345,13 +346,12 @@
 							    
 							    <script src="js/mapcharts.js"></script>
 								<script src="js/mapworlds.js"></script>
-								<script src="js/mapexport.js"></script>
 								<link rel="stylesheet" href="css/mapchart.css" type="text/css" media="all" />
 								<script src="js/maplight.js"></script>
 								<script src="js/mapoption.js"></script>
 
 
-								<div id="chartdiv" style="min-width: 48%; height: 350px; max-width:1000px; padding-bottom:30px; margin: 0 auto"></div>
+								<div id="chartdiv" style="min-width: 80%; height: 600px; max-width:1000px; padding-bottom:30px; margin: 0 auto"></div>
 							    
 							    <h3 style="text-align: center;"> HIXX's Nations</h3>
 								
@@ -364,7 +364,7 @@
 									<div class="modal-content">
 									    <span class="close">&times;</span>
 									    
-									    <div id="pie-container" style="min-width: 48%; height: 350px; max-width:1000px; padding-bottom:30px; margin: 0 auto" data-highcharts-chart="1"><div id="highcharts-znvu5un-4" class="highcharts-container " style="position: relative; overflow: hidden; width: 441px; height: 250px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="441" height="250" viewBox="0 0 441 250"><desc>Created with Highcharts 5.0.9</desc><defs><clipPath id="highcharts-znvu5un-5"><rect x="0" y="0" width="421" height="184" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="441" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="10" width="421" height="184"></rect><rect fill="none" class="highcharts-plot-border" x="10" y="10" width="421" height="184"></rect><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-pie-series highcharts-color-undefined highcharts-tracker " transform="translate(10,10) scale(1 1)" style="cursor:pointer;"><path fill="#ff530a" d="M 210.48329879729698 10.000001700793746 A 82 82 0 0 1 288.46530307095236 66.59504935933657 L 288.46530307095236 66.59504935933657 A 82 82 0 0 0 210.48329879729698 10.000001700793746 Z" class="highcharts-halo highcharts-color-0" fill-opacity="0.25"></path><path fill="#ff530a" d="M 210.48329879729698 10.000001700793746 A 82 82 0 0 1 288.46530307095236 66.59504935933657 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-0 "></path><path fill="#f2ea04" d="M 288.4906690347106 66.67302735188757 A 82 82 0 0 1 162.37559822104353 158.39308663872748 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-1"></path><path fill="#3cf204" d="M 162.3092292076692 158.3449290484287 A 82 82 0 0 1 162.23062395823564 25.712238410557674 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-2"></path><path fill="#04f26f" d="M 162.29693584346313 25.664002186438836 A 82 82 0 0 1 185.06472430847768 14.04458485457053 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-3"></path><path fill="#04f2f2" d="M 185.14269242826737 14.019188560822542 A 82 82 0 0 1 210.38610364507812 10.000079099914146 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-4"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-pie-series highcharts-color-undefined " transform="translate(10,10) scale(1 1)"></g></g><g class="highcharts-button highcharts-contextbutton" style="cursor:pointer;" stroke-linecap="round" transform="translate(407,10)"><title>Chart context menu</title><rect fill="#ffffff" class=" highcharts-button-box" x="0.5" y="0.5" width="24" height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect><path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" class="highcharts-button-symbol" stroke="#666666" stroke-width="3"></path><text x="0" style="font-weight:normal;color:#333333;fill:#333333;" y="12"></text></g><g class="highcharts-legend" transform="translate(48,206)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="344" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-0" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">10s</text><rect x="2" y="4" width="12" height="12" fill="#ff530a" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-1" transform="translate(71.65625,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start">20s</text><rect x="2" y="4" width="12" height="12" fill="#f2ea04" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-2" transform="translate(135.3125,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start">30s</text><rect x="2" y="4" width="12" height="12" fill="#3cf204" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-3" transform="translate(198.96875,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start">40s</text><rect x="2" y="4" width="12" height="12" fill="#04f26f" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-4" transform="translate(262.625,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>over 50s</tspan></text><rect x="2" y="4" width="12" height="12" fill="#04f2f2" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><text x="431" class="highcharts-credits" text-anchor="end" style="color:#ff530a;font-size:9px;fill:#ff530a;" y="245">HIXX</text><g class="highcharts-label highcharts-tooltip highcharts-color-0" style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(222,-9999)" opacity="0" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 85.5 0.5 C 88.5 0.5 88.5 0.5 88.5 3.5 L 88.5 44.5 C 88.5 47.5 88.5 47.5 85.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 85.5 0.5 C 88.5 0.5 88.5 0.5 88.5 3.5 L 88.5 44.5 C 88.5 47.5 88.5 47.5 85.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 85.5 0.5 C 88.5 0.5 88.5 0.5 88.5 3.5 L 88.5 44.5 C 88.5 47.5 88.5 47.5 85.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 85.5 0.5 C 88.5 0.5 88.5 0.5 88.5 3.5 L 88.5 44.5 C 88.5 47.5 88.5 47.5 85.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#ff530a" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size: 10px">10s</tspan><tspan x="8" dy="15">HIXX: </tspan><tspan style="font-weight:bold" dx="0">20.0%</tspan></text></g></svg></div></div>
+									    <div id="pie-container" style="min-width: 80%; height: 600px; max-width:1000px; padding-bottom:30px; margin: 0 auto" data-highcharts-chart="1"><div id="highcharts-znvu5un-4" class="highcharts-container " style="position: relative; overflow: hidden; width: 441px; height: 250px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="441" height="250" viewBox="0 0 441 250"><desc>Created with Highcharts 5.0.9</desc><defs><clipPath id="highcharts-znvu5un-5"><rect x="0" y="0" width="421" height="184" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="441" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="10" width="421" height="184"></rect><rect fill="none" class="highcharts-plot-border" x="10" y="10" width="421" height="184"></rect><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-pie-series highcharts-color-undefined highcharts-tracker " transform="translate(10,10) scale(1 1)" style="cursor:pointer;"><path fill="#ff530a" d="M 210.48329879729698 10.000001700793746 A 82 82 0 0 1 288.46530307095236 66.59504935933657 L 288.46530307095236 66.59504935933657 A 82 82 0 0 0 210.48329879729698 10.000001700793746 Z" class="highcharts-halo highcharts-color-0" fill-opacity="0.25"></path><path fill="#ff530a" d="M 210.48329879729698 10.000001700793746 A 82 82 0 0 1 288.46530307095236 66.59504935933657 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-0 "></path><path fill="#f2ea04" d="M 288.4906690347106 66.67302735188757 A 82 82 0 0 1 162.37559822104353 158.39308663872748 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-1"></path><path fill="#3cf204" d="M 162.3092292076692 158.3449290484287 A 82 82 0 0 1 162.23062395823564 25.712238410557674 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-2"></path><path fill="#04f26f" d="M 162.29693584346313 25.664002186438836 A 82 82 0 0 1 185.06472430847768 14.04458485457053 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-3"></path><path fill="#04f2f2" d="M 185.14269242826737 14.019188560822542 A 82 82 0 0 1 210.38610364507812 10.000079099914146 L 210.5 92 A 0 0 0 0 0 210.5 92 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="1" stroke-linejoin="round" class="highcharts-point highcharts-color-4"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-pie-series highcharts-color-undefined " transform="translate(10,10) scale(1 1)"></g></g><g class="highcharts-button highcharts-contextbutton" style="cursor:pointer;" stroke-linecap="round" transform="translate(407,10)"><title>Chart context menu</title><rect fill="#ffffff" class=" highcharts-button-box" x="0.5" y="0.5" width="24" height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect><path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" class="highcharts-button-symbol" stroke="#666666" stroke-width="3"></path><text x="0" style="font-weight:normal;color:#333333;fill:#333333;" y="12"></text></g><g class="highcharts-legend" transform="translate(48,206)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="344" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-0" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">10s</text><rect x="2" y="4" width="12" height="12" fill="#ff530a" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-1" transform="translate(71.65625,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start">20s</text><rect x="2" y="4" width="12" height="12" fill="#f2ea04" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-2" transform="translate(135.3125,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start">30s</text><rect x="2" y="4" width="12" height="12" fill="#3cf204" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-3" transform="translate(198.96875,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start">40s</text><rect x="2" y="4" width="12" height="12" fill="#04f26f" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-pie-series highcharts-color-4" transform="translate(262.625,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>over 50s</tspan></text><rect x="2" y="4" width="12" height="12" fill="#04f2f2" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><text x="431" class="highcharts-credits" text-anchor="end" style="color:#ff530a;font-size:9px;fill:#ff530a;" y="245">HIXX</text><g class="highcharts-label highcharts-tooltip highcharts-color-0" style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(222,-9999)" opacity="0" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 85.5 0.5 C 88.5 0.5 88.5 0.5 88.5 3.5 L 88.5 44.5 C 88.5 47.5 88.5 47.5 85.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 85.5 0.5 C 88.5 0.5 88.5 0.5 88.5 3.5 L 88.5 44.5 C 88.5 47.5 88.5 47.5 85.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 85.5 0.5 C 88.5 0.5 88.5 0.5 88.5 3.5 L 88.5 44.5 C 88.5 47.5 88.5 47.5 85.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 85.5 0.5 C 88.5 0.5 88.5 0.5 88.5 3.5 L 88.5 44.5 C 88.5 47.5 88.5 47.5 85.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#ff530a" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size: 10px">10s</tspan><tspan x="8" dy="15">HIXX: </tspan><tspan style="font-weight:bold" dx="0">20.0%</tspan></text></g></svg></div></div>
 										
 										<script type="text/javascript">
 											$(document).ready(function () {
@@ -553,10 +553,11 @@
 		</section>   <!-- end section -->
 		
 		
+
 		<!-- Start Portfolio Section
 		=========================================== -->
 		
-	<section id="showcase">
+		<section id="showcase">
 			<div class="container">
 				<div class="row wow fadeInDown" data-wow-duration="500ms">
 					<div class="col-lg-12">
@@ -576,7 +577,7 @@
 								<li><a href="javascript:void(0)" class="filter" data-filter=".app">동해</a></li>
 								<li><a href="javascript:void(0)" class="filter" data-filter=".web">무주</a></li>
 								<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">삼척</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">Illustrator</a></li>
+								
 							</ul>
 						</div>
 						<!-- /portfolio item filtering -->
@@ -584,24 +585,23 @@
 					</div> <!-- /end col-lg-12 -->
 				</div> <!-- end row -->
 			</div>	<!-- end container -->
-		<!-- end container -->
+	
+			<!-- portfolio items -->
+			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
+                <ul id="og-grid" class="og-grid">
 
-		<!-- portfolio items -->
-		<div class="portfolio-item-wrapper wow fadeInUp"
-			data-wow-duration="500ms">
-			<ul id="og-grid" class="og-grid">
 
 				<!-- single portfolio item -->
 
 				<li class="mix app">
 				<a href="" data-toggle="modal" data-target="#myModal" >
-					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
+					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/CD-rock.jpg" alt=""/>
 						<div class="hover-mask">
 							<h3>East Sea</h3>
 							
-							<span>
+							<!-- <span>
 						 		<i class="fa fa-plus fa-2x"></i>
-							</span>
+							</span> -->
 						</div>
 					</a>			
 				</li>
@@ -609,15 +609,12 @@
 				
 				<!-- single portfolio item -->
 					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-toggle="modal1" 
-						data-target="#myModal" >
-							<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/deogyu.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/deogyu.jpg" alt="">
+
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -626,16 +623,11 @@
 					<!-- single portfolio item -->
 					
 					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Hwanseon.jpg" 
-						data-title="Samcheok" 
-						data-description="환선굴.">
-							<img src="img/travel-recommend/Hwanseon.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/Hwanseon.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -643,16 +635,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Janghohang.jpg" 
-						data-title="Samcheok" 
-						data-description="장호항.">
-							<img src="img/travel-recommend/Janghohang.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/Janghohang.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -660,157 +647,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/CK-cave.jpg" 
-						data-title="East Sea" 
-						data-description="천곡동굴.">
-							<img src="img/travel-recommend/CK-cave.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/mdysresort.jpg" 
-						data-title="Mojoo" 
-						data-description="무주 리조트.">
-							<img src="img/travel-recommend/mdysresort.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>	
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Jukseoru.jpg" 
-						data-title="Samcheok" 
-						data-description="죽서루.">
-							<img src="img/travel-recommend/Jukseoru.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>	
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/MH-lighthouse.jpg" 
-						data-title="East Sea" 
-						data-description="묵호등대.">
-							<img src="img/travel-recommend/MH-lighthouse.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/raje.jpg" 
-						data-title="Mojoo" 
-						data-description="라제통문.">
-							<img src="img/travel-recommend/raje.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/wine-cave.jpg" 
-						data-title="Mojoo" 
-						data-description="와인동굴.">
-							<img src="img/travel-recommend/wine-cave.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>	
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/oceanrailbike.jpg" 
-						data-title="Samcheok" 
-						data-description="삼척 레일바이크.">
-							<img src="img/travel-recommend/oceanrailbike.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/eastsea.jpg" 
-						data-title="East Sea" 
-						data-description="동해바다.">
-							<img src="img/travel-recommend/eastsea.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- portfolio items -->
-			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
-                <ul id="og-grid" class="og-grid">
-				
-					<!-- single portfolio item -->	
-					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/CD-rock.jpg" 
-						data-title="East Sea" 
-						data-description="촛대바위">
-							<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/CK-cave.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
 								
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
 							</div>
 						</a>
 					</li>
@@ -818,84 +659,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/deogyu.jpg" 
-						data-title="Mojoo" 
-						data-description="덕유산.">
-							<img src="img/travel-recommend/deogyu.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/mdysresort.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Hwanseon.jpg" 
-						data-title="Samcheok" 
-						data-description="환선굴.">
-							<img src="img/travel-recommend/Hwanseon.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Janghohang.jpg" 
-						data-title="Samcheok" 
-						data-description="장호항.">
-							<img src="img/travel-recommend/Janghohang.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/CK-cave.jpg" 
-						data-title="East Sea" 
-						data-description="천곡동굴.">
-							<img src="img/travel-recommend/CK-cave.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/mdysresort.jpg" 
-						data-title="Mojoo" 
-						data-description="무주 리조트.">
-							<img src="img/travel-recommend/mdysresort.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+							
 							</div>	
 						</a>
 					</li>
@@ -903,16 +671,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Jukseoru.jpg" 
-						data-title="Samcheok" 
-						data-description="죽서루.">
-							<img src="img/travel-recommend/Jukseoru.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/Jukseoru.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>	
 						</a>
 					</li>
@@ -920,16 +683,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/MH-lighthouse.jpg" 
-						data-title="East Sea" 
-						data-description="묵호등대.">
-							<img src="img/travel-recommend/MH-lighthouse.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/MH-lighthouse.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -937,16 +695,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/raje.jpg" 
-						data-title="Mojoo" 
-						data-description="라제통문.">
-							<img src="img/travel-recommend/raje.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/raje.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -954,16 +707,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/wine-cave.jpg" 
-						data-title="Mojoo" 
-						data-description="와인동굴.">
-							<img src="img/travel-recommend/wine-cave.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/wine-cave.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>	
 						</a>
 					</li>
@@ -971,22 +719,35 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/oceanrailbike.jpg" 
-						data-title="Samcheok" 
-						data-description="삼척 레일바이크.">
-							<img src="img/travel-recommend/oceanrailbike.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/oceanrailbike.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
 					<!-- /single portfolio item -->
+					
+					<!-- single portfolio item -->
+					<li class="mix app">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/eastsea.jpg" alt="HIXX">
+							<div class="hover-mask">
+								<h3>East Sea</h3>
+								
+							</div>
+						</a>
+					</li>
+					<!-- /single portfolio item -->
+				
+			
 			</ul>
 
+				<div class="all-post text-center">
+					
+					<a id="more-button" class="btn btn-transparent">더 보기</a>
+				</div>
 
 
 			<!-- portfolio items wrapper -->
@@ -1008,7 +769,7 @@
 
 
 					<div id="star-rate-title">
-						<h1 class="text-center">Seoul</h1>
+						<h1 class="text-center">도시명</h1>
 
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -1069,6 +830,7 @@
 			</div>
 		</div>
 	</div>
+	
 		
 		
 		<!-- Start Team Skills
