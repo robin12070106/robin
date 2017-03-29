@@ -25,7 +25,7 @@
 		================================================== -->
 		<!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- bootstrap.min css -->"C:/Users/LSJ/Desktop/HIXX(가장최신)/WebContent/login.jsp"
+		<!-- bootstrap.min css -->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<!-- Animate.css -->
         <link rel="stylesheet" href="css/animate.css">
@@ -39,10 +39,15 @@
         <link rel="stylesheet" href="css/main.css">
 		<!-- Media Queries -->
         <link rel="stylesheet" href="css/media-queries.css">
+<<<<<<< HEAD
         
         <link rel="stylesheet" href="css/account/modal-star-rate.css">
          
         <link rel="stylesheet" href="css/NewFile.css">
+=======
+        <!-- Modal star rate -->
+        <link rel="stylesheet" href="css/account/modal-star-rate.css">
+>>>>>>> refs/remotes/origin/master
 
 		<!-- My Page -->
 		<!-- <link href="css/NewFile.css" type="text/css" rel="stylesheet" /> -->
@@ -118,7 +123,7 @@
 							<div class="bg-img bg-img-2"></div>
 						<div class="carousel-caption">
 							<div>
-								<h2 class="heading animated fadeInDown">사람이 여행을 하는 것은 도착하기 위해서가 아니라 여행하기 위해서이다</h2>
+								<h2 class="heading animated fadeInDown">사람이 여행을 하는 것은 도착하기 위해서가 아니라</br> 여행하기 위해서이다</h2>
 								<h3 class="animated fadeInUp">괴테</h3>
 								<a class="btn btn-green animated fadeInUp" href="#body">Get Started</a>
 							</div>
@@ -187,10 +192,10 @@
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"><a href="#body">Home</a></li>
-                        <li><a href="#services">동행 추천</a></li>
+                        <li><a href="#about">My Page</a></li>
                         <li><a href="#showcase">여행지 추천</a></li>
-                        <li><a href="#our-team">SNS</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#our-team">동행 추천</a></li>
+                        <li><a href="#blog">SNS</a></li>
                         <c:if test="${not empty sessionScope.id }">
                         <li><a href="#about">${sessionScope.id } 님 환영합니다</a></li>                                              
                         <li><a href="logout">로그아웃</a></li>
@@ -556,6 +561,7 @@
 		</section>   <!-- end section -->
 		
 		
+<<<<<<< HEAD
 		<!-- Start Services Section
 		==================================== -->
 		
@@ -648,6 +654,9 @@
 		
 		
 	<!-- Start Portfolio Section
+=======
+		<!-- Start Portfolio Section
+>>>>>>> refs/remotes/origin/master
 		=========================================== -->
 		
 		<section id="showcase">
@@ -701,8 +710,15 @@
 				
 				<!-- single portfolio item -->
 					<li class="mix web">
+<<<<<<< HEAD
 						<a href="" data-toggle="modal" data-target="#myModal" >
 					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/deogyu.jpg" alt="">
+=======
+						<a href="javascript:void(0)" 
+						data-toggle="modal1" 
+						data-target="#myModal" >
+							<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/deogyu.jpg" alt="HIXX">
+>>>>>>> refs/remotes/origin/master
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
 								
@@ -1074,7 +1090,7 @@
 				
 					<!-- section title -->
 					<div class="title text-center wow fadeInUp" data-wow-duration="500ms">
-						<h2>Our <span class="color">Team</span></h2>
+						<h2>동행 <span class="color">추천</span></h2>
 						<div class="border"></div>
 					</div>
 					<!-- /section title -->
@@ -1084,7 +1100,7 @@
                        <article class="team-mate">
 							<div class="member-photo">
 								<!-- member photo -->
-								<img class="img-responsive" src="img/team/member-1.jpg" alt="HIXX">
+								<img class="img-responsive" src="img/team/sj.jpg" alt="HIXX">
 								<!-- /member photo -->
 								
 								<!-- member social profile -->
@@ -1101,14 +1117,14 @@
 							
 							<!-- member name & designation -->
 							<div class="member-title">
-								<h3>Abul Mal Muhit</h3>
+								<h3>이승진</h3>
 								<span>CEO/Founder</span>
 							</div>
 							<!-- /member name & designation -->
 							
 							<!-- about member -->
                            <div class="member-info">
-                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                               <p>SJCORP.com 대표</br>자유로운 만남 추구</br>무계획적 여행  선호</p>
                            </div>
 						   <!-- /about member -->
 						   
@@ -1121,7 +1137,7 @@
                        <article class="team-mate">
 							<div class="member-photo">
 								<!-- member photo -->
-								<img class="img-responsive" src="img/team/member-1.jpg" alt="HIXX">
+								<img class="img-responsive" src="img/team/kth.jpg" alt="HIXX">
 								<!-- /member photo -->
 								
 								<!-- member social profile -->
@@ -1138,14 +1154,14 @@
 							
 							<!-- member name & designation -->
 							<div class="member-title">
-								<h3>Frank Miller</h3>
-								<span>Manager</span>
+								<h3>김태희</h3>
+								<span>배우</span>
 							</div>
 							<!-- /member name & designation -->
 							
 							<!-- about member -->
                            <div class="member-info">
-                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                               <p>루아엔터테인먼트 소속</br>여행 경험 많음</br>계획적 여행  선호</p>
                            </div>
 						   <!-- /about member -->
 						</article>
@@ -1157,7 +1173,7 @@
                        <article class="team-mate">
 							<div class="member-photo">
 								<!-- member photo -->
-								<img class="img-responsive" src="img/team/member-1.jpg" alt="HIXX">
+								<img class="img-responsive" src="img/team/jwj.jpg" alt="HIXX">
 								<!-- /member photo -->
 								
 								<!-- member social profile -->
@@ -1174,14 +1190,14 @@
 							
 							<!-- member name & designation -->
 							<div class="member-title">
-								<h3>Michael Jonson</h3>
+								<h3>조원준</h3>
 								<span>Web Developer</span>
 							</div>
 							<!-- /member name & designation -->
 							
 							<!-- about member -->
                            <div class="member-info">
-                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                               <p>SJCORP.com Account 팀장</br>여행 경험 많음</br>무계획적 여행  선호</p>
                            </div>
 						   <!-- /about member -->
                        </article>
@@ -1193,7 +1209,7 @@
                        <article class="team-mate kill-margin-bottom">
 							<div class="member-photo">
 								<!-- member photo -->
-								<img class="img-responsive" src="img/team/member-1.jpg" alt="HIXX">
+								<img class="img-responsive" src="img/team/jjh.jpg" alt="HIXX">
 								<!-- /member photo -->
 								
 								<!-- member social profile -->
@@ -1210,14 +1226,14 @@
 							
 							<!-- member name & designation -->
 							<div class="member-title">
-								<h3>Mo. Kha. Alamgir</h3>
-								<span>SEO Specialist</span>
+								<h3>전지현</h3>
+								<span>배우</span>
 							</div>
 							<!-- /member name & designation -->
 							
 							<!-- about member -->
                            <div class="member-info">
-                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                               <p>문화창고 소속</br>여행 경험 많음</br>계획적 여행  선호</p>
                            </div>
 						   <!-- /about member -->
                        </article>
@@ -1227,7 +1243,7 @@
 				</div>  	<!-- End row -->
 				
 				<div class="all-post text-center">
-						<a class="btn btn-transparent" href="compRec.html">View All Post</a>
+						<a class="btn btn-transparent" href="compRec.html">동행인 더보기</a>
 				</div>
 				
 			</div>   	<!-- End container -->
@@ -1263,145 +1279,102 @@
 			</div>   	<!-- End container -->
 		</section>   <!-- End section -->
 		
-		<!-- Start Pricing section
+		<!--
+		Start Blog Section
 		=========================================== -->
-		
-		<section id="pricing" class="bg-one">
+				
+		<section id="blog" class="bg-one">
 			<div class="container">
 				<div class="row">
-					
+
 					<!-- section title -->
-				    <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
-			        	<h2>Our Greatest<span class="color"> Plans</span></h2>
-				        <div class="border"></div>
-				    </div>
-				    <!-- /section title -->
+					<div class="title text-center wow fadeInDown">
+						<h2> Latest <span class="color">SNS</span></h2>
+						<div class="border"></div>
+					</div>
+					<!-- /section title -->
+
+					<div class="clearfix">
 					
-					<!-- single pricing table -->
-					<article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
-						<div class="pricing">
-							
-							<!-- plan name & value -->
-							<div class="price-title">
-								<h3>Free</h3>
-								<p>From <strong class="value">$99</strong> month</p>
-							</div>
-							<!-- /plan name & value -->
-							
-							<!-- plan description -->
-							<ul>
-								<li>1GB Disk Space</li>
-								<li>10 Email Account</li>
-								<li>Script Installer</li>
-								<li>1 GB Storage</li>
-								<li>10 GB Bandwidth</li>
-								<li>24/7 Tech Support</li>
-							</ul>
-							<!-- /plan description -->
-							
-							<!-- signup button -->
-							<a class="btn btn-transparent" href="#">Signup</a>
-							<!-- /signup button -->
-							
-						</div>
-					</article>
-					<!-- end single pricing table -->
-					
-					<!-- single pricing table -->
-					<article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-						<div class="pricing">
+						<!-- single blog post -->
+						<article class="col-md-3 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms">
+							<div class="note">
+								<div class="media-wrapper">
+									<img src="img/blog/1.jpg" alt="1" class="img-responsive">
+								</div>
+								
+								<div class="excerpt">
+									<h3>박선미 님의 post</h3>
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
+									<a class="btn btn-transparent" href="single-post.html">Read more</a>
+								</div>
+							</div>						
+						</article>
+						<!-- /single blog post -->
 						
-							<!-- plan name & value -->
-							<div class="price-title">
-								<h3>Silver</h3>
-								<p>From <strong class="value">$149</strong> month</p>
-							</div>
-							<!-- /plan name & value -->
-							
-							<!-- plan description -->
-							<ul>
-								<li>1GB Disk Space</li>
-								<li>10 Email Account</li>
-								<li>Script Installer</li>
-								<li>1 GB Storage</li>
-								<li>10 GB Bandwidth</li>
-								<li>24/7 Tech Support</li>
-							</ul>
-							<!-- /plan description -->
-							
-							<!-- signup button -->
-							<a class="btn btn-transparent" href="#">Signup</a>
-							<!-- /signup button -->
-							
-						</div>
-					</article>
-					<!-- end single pricing table -->
-					
-					<!-- single pricing table -->
-					<article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="pricing">
-							
-							<!-- plan name & value -->
-							<div class="price-title">
-								<h3>Gold</h3>
-								<p>From <strong class="value">$199</strong> month</p>
-							</div>
-							<!-- /plan name & value -->
-							
-							<!-- plan description -->
-							<ul>
-								<li>1GB Disk Space</li>
-								<li>10 Email Account</li>
-								<li>Script Installer</li>
-								<li>1 GB Storage</li>
-								<li>10 GB Bandwidth</li>
-								<li>24/7 Tech Support</li>
-							</ul>
-							<!-- /plan description -->
-							
-							<!-- signup button -->
-							<a class="btn btn-transparent" href="#">Signup</a>
-							<!-- /signup button -->
-							
-						</div>
-					</article>
-					<!-- end single pricing table -->
-					
-					<!-- single pricing table -->
-					<article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="750ms">
-						<div class="pricing kill-margin-bottom">
+						<!-- single blog post -->
+						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+							<div class="note">
+								<div id="gallery-post" class="media-wrapper">
+									<div class="item">
+										<img src="img/blog/2.jpg" alt="2" class="img-responsive">
+									</div>
+									<div class="item">
+										<img src="img/blog/3.jpg" alt="3" class="img-responsive">
+									</div>
+									<div class="item">
+										<img src="img/blog/4.jpg" alt="4" class="img-responsive">
+									</div>
+								</div>
+								
+								<div class="excerpt">
+									<h3>윤운영 님의 post</h3>
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
+									<a class="btn btn-transparent" href="single-post.html">Read more</a>
+								</div>
+							</div>						
+						</article>
+						<!-- end single blog post -->
 						
-							<!-- plan name & value -->
-							<div class="price-title">
-								<h3>Platinum</h3>
-								<p>From <strong class="value">$299</strong> month</p>
-							</div>
-							<!-- /plan name & value -->
-							
-							<!-- plan description -->
-							<ul>
-								<li>1GB Disk Space</li>
-								<li>10 Email Account</li>
-								<li>Script Installer</li>
-								<li>1 GB Storage</li>
-								<li>10 GB Bandwidth</li>
-								<li>24/7 Tech Support</li>
-							</ul>
-							<!-- /plan description -->
-							
-							<!-- signup button -->
-							<a class="btn btn-transparent" href="#">Signup</a>
-							<!-- /signup button -->
-							
-						</div>
-					</article>
-					<!-- end single pricing table -->
-				    
-					
-				</div>       <!-- End row -->
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
-		
+						<!-- single blog post -->
+						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+							<div class="note">
+								<div class="media-wrapper">
+									<img src="img/blog/3.jpg" alt="3" class="img-responsive">
+								</div>
+								
+								<div class="excerpt">
+									<h3>김홍욱 님의 post </h3>
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
+									<a class="btn btn-transparent" href="single-post.html">Read more</a>
+								</div>
+							</div>						
+						</article>
+						<!-- end single blog post -->
+						
+						<!-- single blog post -->
+						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+							<div class="note kill-margin-bottom">
+								<div class="media-wrapper">
+									<img src="img/blog/4.jpg" alt="4" class="img-responsive">
+								</div>
+								<div class="excerpt">
+									<h3>김정목 님의 post</h3>
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
+									<a class="btn btn-transparent" href="single-post.html">Read more</a>
+								</div>
+							</div>						
+						</article>
+						<!-- end single blog post -->
+					</div>
+
+					<div class="all-post text-center">
+						<a class="btn btn-transparent" href="blog.html">View All Post</a>
+					</div>
+
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</section> <!-- end section -->	
 		
 		<!-- Start Testimonial
 		=========================================== -->
@@ -1511,102 +1484,7 @@
 		</section>    <!-- End Section -->
 		
 		
-		<!--
-		Start Blog Section
-		=========================================== -->
-				
-		<section id="blog" class="bg-one">
-			<div class="container">
-				<div class="row">
-
-					<!-- section title -->
-					<div class="title text-center wow fadeInDown">
-						<h2> Latest <span class="color">Posts</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-
-					<div class="clearfix">
-					
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms">
-							<div class="note">
-								<div class="media-wrapper">
-									<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
-								
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- /single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-							<div class="note">
-								<div id="gallery-post" class="media-wrapper">
-									<div class="item">
-										<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-									</div>
-									<div class="item">
-										<img src="img/blog/bicycle.jpg" alt="Flying bicycle" class="img-responsive">
-									</div>
-									<div class="item">
-										<img src="img/blog/3D-beach-art.jpg" alt="3D Beach Art | HIXX" class="img-responsive">
-									</div>
-								</div>
-								
-								<div class="excerpt">
-									<h3>Simple Slider Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-							<div class="note">
-								<div class="media-wrapper">
-									<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
-								
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-							<div class="note kill-margin-bottom">
-								<div class="media-wrapper">
-									<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-					</div>
-
-					<div class="all-post text-center">
-						<a class="btn btn-transparent" href="blog.html">View All Post</a>
-					</div>
-
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</section> <!-- end section -->
+		
 
 
 		
@@ -1691,9 +1569,9 @@
 			</div> <!-- end container -->
 			
 			<!-- Google Map -->
-			<div class="google-map wow fadeInDown" data-wow-duration="500ms">
+			<!-- <div class="google-map wow fadeInDown" data-wow-duration="500ms">
 				<div id="map-canvas"></div>
-			</div>	
+			</div>	 -->
 			<!-- /Google Map -->
 			
 		</section> <!-- end section -->
