@@ -43,15 +43,12 @@ public class DefaultRatingController extends HttpServlet {
 				}
 				for(int i=0; i<sw;i++) {
 					cityHanto[i] = cityHan[cityRank[i]-1];
-					cityPassto[i] = cityPass[cityRank[i]-1];			
-					System.out.println(cityRank[i]);
-					System.out.println(cityHanto[i]);
-					System.out.println(cityPassto[i]);
+					cityPassto[i] = cityPass[cityRank[i]-1];
 				}
 				
 				request.setAttribute("cityRank", cityRank);
 				request.setAttribute("cityHanto", cityHanto);
-				request.setAttribute("cityPass", cityPass);
+				request.setAttribute("cityPassto", cityPassto);
 				request.getRequestDispatcher("/WEB-INF/views/customer/default-rating.jsp").forward(request, response);
 			}
 			
@@ -67,11 +64,15 @@ public class DefaultRatingController extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String ccode = request.getParameter("city-code");
-		String trate = request.getParameter("city-rate");
-		String frate = request.getParameter("food-rate");
-		String srate = request.getParameter("sightsee-rate");
+		int ccode = Integer.parseInt(request.getParameter("city-code"));
+		int trate = Integer.parseInt(request.getParameter("city-rate"));
+		int frate = Integer.parseInt(request.getParameter("food-rate"));
+		int srate = Integer.parseInt(request.getParameter("sightsee-rate"));
+/*		int result = Integer.parseInt(request.getParameter("result"));*/
+		String id = (String)request.getSession().getAttribute("id");
 		
+		CityScoreDao cityScoreDao = new MySQLCityScoreDao();
+		cityScoreDao.add(id,ccode,trate,frate,srate);
 		
 		
 		

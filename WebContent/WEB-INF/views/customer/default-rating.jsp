@@ -78,53 +78,27 @@
 	ga('send', 'pageview');
 </script>
 
-<%-- 	<c:forEach var = "v" items = "${cityHanto}">
-		
-		</c:forEach>
-	 --%>
-
-<!-- 
 <script>
-	var cnum = 51;
-	var sw=0;
-	var name = [
-		<c:forEach var="a" items="${cityHanto}">			
-			<c:if test="sw != cnum">"</c:if>
-			${a}
-			<c:if test="sw != cnum">"</c:if>
-			<c:if test="sw != cnum-1">,</c:if>
-			sw++;
-		</c:forEach>		
-	];
-</script> -->
-
-<script>
-	var name = new Array();
-	var sw=0;
-	<c:forEach var="a" items="${cityHanto}">
-		name[0] = "${a}";
-	</c:forEach>
-</script>
-
-<!-- http://blog.naver.com/PostView.nhn?blogId=iopqwas&logNo=140147841819
- --> 
-<%--  <c:forEach var="a" items="${cityHanto}">
-			<c:if test="sw != cnum">"</c:if>
-			${a}
-			<c:if test="sw != cnum">"</c:if>
-			<c:if test="sw != cnum-1">,</c:if>
-			sw++;
-</c:forEach>	
- --%> 		
+	var han = new Array();
+	var pass = new Array();
+	var rank = new Array();
+	<%
+		String cityHanto[] = (String[])request.getAttribute("cityHanto");
+		int cityPassto[] = (int[])request.getAttribute("cityPassto");
+		int cityRank[] = (int[])request.getAttribute("cityRank");
+	%>
+	
+	<%for (int i=0;i<cityHanto.length;i++) {%>
+		han[<%=i%>] =  '<%=cityHanto[i]%>';
+		pass[<%=i%>] =  <%=cityPassto[i]%>;
+		rank[<%=i%>] =  <%=cityRank[i]%>;
+	<%};%>
+	
+</script> 
 		
 <script>
 	function onChange() {
 		var text = document.getElementById("urlid").value;
-/* 		var name = ["서울","부산","대전"]; */
-	<%-- 	var name = %{cityHanto};
-		/* var name = new Array("서울", "부산", "대전", "대구르르", "대구", "서울우우울", "서울우울해", "부산아아아산", "대전어어전"); */
-		var name2 = <%request.getAttribute("cityHanto");%>;
-	 --%>	
 		var sw = 0;
 		var strHtml = "";
 
@@ -135,11 +109,11 @@
 		strHtml += "<td style = 'width:1%'>도시명</td>";
 		strHtml += "</td>";
 
-		for (var i = 0; i < name.length; i++) {
-			if (name[i].substring(0, text.length) == text) {
+		for (var i = 0; i < han.length; i++) {
+			if (han[i].substring(0, text.length) == text) {
 				strHtml += "<tr align='center'>";
 				strHtml += "<td>" + parseInt(sw + 1) + "</td>";
-				strHtml += "<td>" + name[i] + "</td>";
+				strHtml += "<td>" + han[i] + "</td>";
 				strHtml += "</tr>";
 				sw++;
 			}
@@ -150,6 +124,8 @@
 		document.getElementById("urlid_confirm").innerHTML = strHtml;
 	}
 </script>
+
+
 
 <script>
 	window.addEventListener("onload",function(){
@@ -226,23 +202,22 @@
 		<div class="portfolio-item-wrapper wow fadeInUp"
 			data-wow-duration="500ms">
 			<ul id="og-grid" class="og-grid">
-			
-			<%-- 여기여기여기여기여기	<c:forEach var="v" items = "${cityRank}">
-					<td>${v}</td>
-				</c:forEach>
-			 --%>
+				<script>
+					var pop = "헐헐헐";
+				</script>
 				<%for(int i=0;i<10;i++){ %>
-				<li class="mix app">
-				<a href="" class="city" data-toggle="modal" data-target="#myModal" data-id="Seoul<%=i%>">  
-					<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
-						<div class="hover-mask">
-							<h3></h3>						
-							<span>
-						 		<i class="fa fa-plus fa-2x"></i>
-							</span>
-						</div>
-				</a> 		
-				</li>
+					<li class="mix app">
+					<a href="" class="city" data-toggle="modal" data-target="#myModal" data-id="&{han[<%=i%>]};">  
+						<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
+							<div class="hover-mask">
+								<h3></h3>						
+								<span>
+									&{han[<%=i%>]};
+							 		<i class="fa fa-plus fa-2x"></i>
+								</span>
+							</div>
+					</a> 		
+					</li>
 				<%} %>
 				
 				

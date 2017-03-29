@@ -2,6 +2,7 @@ package com.hixx.web.dao.mysql;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -96,12 +97,53 @@ public class MySQLCityScoreDao implements CityScoreDao {
 				cityPass[Integer.parseInt(rs.getString("COUNTRY_CODE"))-1] = 1;
 			}
 			
+			rs.close();
+			st.close();
+			con.close();
+			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return cityPass;
+	}
+
+	@Override
+	public void add(String id, int ccode, int trate, int frate, int srate) {
+		String codesql = "SELECT MAX(CODE)+1 CODE FROM CITYSCORE";
+		String sql = "INSERT INTO CITYSCORE (CODE,WRITER,COUNTRY_CODE, TRATE, FRATE, SRATE) VALUES (?,?,?,?,?,?)";
+		int codenum=0;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://211.238.142.84/hixx?autoReconnect=true&amp;useSSL=false&characterEncoding=UTF-8";
+			Connection con = DriverManager.getConnection(url, "sjlee", "6664");
+			
+			Statement st = con.createStatement();
+			ResultSet rs = st.executeQuery(codesql);
+			if(rs.next()) codenum = Integer.parseInt(rs.getString("CODE"));
+			rs.close();
+			st.close();
+			con.close();
+			
+			PreparedStatement st2 = con.prepareStatement(sql);
+		
+			st2.setInt(1, codenum);
+			st2.setString(2, id);
+			st2.setInt(3, ccode);
+			st2.setInt(4, trate);
+			st2.setInt(5, frate);
+			st2.setInt(6, srate);
+			
+			st2.executeUpdate();
+			
+			
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}	
 	}
 
 }

@@ -29,7 +29,6 @@ public class LoginController extends HttpServlet {
 		MemberDao memberDao = new MySQLMemberDao();
 		Member member = memberDao.get(formUsername);
 		int validate = 0;
-		System.out.println(member.getPwd());
 		if (member != null && member.getPwd().equals(formPassword)) {
 			validate = 1;
 			HttpSession session = request.getSession();
