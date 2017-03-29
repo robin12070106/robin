@@ -454,6 +454,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 75px 0;
 }
 
+#showcase h3 {
+	margin-top: 100px;
+}
+
 .portfolio-filter {
     margin-bottom: 10px;
     height: 35px;
@@ -1545,4 +1549,6 @@ blockquote {
 .form-group:last-child input {
   margin: 0;
 }
+
+
                             
