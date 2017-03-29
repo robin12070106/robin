@@ -122,10 +122,6 @@ public class MySQLCityScoreDao implements CityScoreDao {
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(codesql);
 			if(rs.next()) codenum = Integer.parseInt(rs.getString("CODE"));
-			rs.close();
-			st.close();
-			con.close();
-			
 			PreparedStatement st2 = con.prepareStatement(sql);
 		
 			st2.setInt(1, codenum);
@@ -137,6 +133,9 @@ public class MySQLCityScoreDao implements CityScoreDao {
 			
 			st2.executeUpdate();
 			
+			rs.close();
+			st.close();
+			con.close();
 			
 			
 		} catch (ClassNotFoundException e) {

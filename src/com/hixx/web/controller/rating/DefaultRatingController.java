@@ -65,17 +65,32 @@ public class DefaultRatingController extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int ccode = Integer.parseInt(request.getParameter("city-code"));
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		request.setCharacterEncoding("UTF-8");
+		
+		
+		String cname = request.getParameter("city");
 		int trate = Integer.parseInt(request.getParameter("city-rate"));
 		int frate = Integer.parseInt(request.getParameter("food-rate"));
 		int srate = Integer.parseInt(request.getParameter("sightsee-rate"));
-/*		int result = Integer.parseInt(request.getParameter("result"));*/
 		String id = (String)request.getSession().getAttribute("id");
+		
+
+		CityInfDao cityInfDao = new MySQLCityInfDao();
+		
+		int cnum = 51;int ssw=0;int ccode =0;
+		String cityHan[] = new String[cnum];
+		System.out.println(cname);
+		for(CityInf i : cityInfDao.getList()) {
+			cityHan[ssw] = i.getCityHan();
+			System.out.println(cityHan[ssw]);
+			if (cityHan[ssw].equals(cname)) ccode = ssw+1;
+			ssw++;
+		}
 		
 		CityScoreDao cityScoreDao = new MySQLCityScoreDao();
 		cityScoreDao.add(id,ccode,trate,frate,srate);
-		
-		
 		
 		response.sendRedirect("default-rating");
 	}

@@ -43,7 +43,7 @@
 <link rel="stylesheet" href="css/account/star-rate.css">
 <!-- Media Queries -->
 <link rel="stylesheet" href="css/media-queries.css">
-<!-- Modal star rate -->
+
 <link rel="stylesheet" href="css/account/modal-star-rate.css">
 
 <!--
@@ -179,17 +179,7 @@
 	</div>
 
 	<div class="progress">
-		<p>진행률 : ${result}/10
-			 <progress value = "${result}" max = "10" id = "progress-bar">
-			 	<div pseudo="-webkit-progress-inner-element">
-			 		<div pseudo="-webkit-progress-bar">
-			 			<div pseudo="-webkit-progress-value" style="width:80%;">
-			 			
-			 			</div>
-			 		</div>
-			 	</div>
-			 </progress>
-		 </p>
+		<p>진행률 : ${result}/10 <progress value = "${result}" max = "10" id = "progress-bar"> </progress></p>
 	</div>
 	<!--
 	    Start Preloader
@@ -238,7 +228,7 @@
 					<a href="" data-toggle="modal"  class="city" data-target="#myModal" data-id="" >
 						<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
 							<div class="hover-mask">
-							<h3 id="h3">test</h3>
+							<h3 id="h3"></h3>
 							
 						
 						</div>
@@ -428,7 +418,15 @@
 	<script>
 	$(document).ready(function (e) {
 	      $('.og-grid').click(function (event){
-	   	    var cityId = $(event.target.parentNode).data('id');
+	    		var a = event.target;
+	    		
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		
+	    	 var cityId = $(a).data('id');
 
 
 	 	      $('.modal-body #modal-city-name').text(cityId);
