@@ -40,9 +40,12 @@
 		<!-- Media Queries -->
         <link rel="stylesheet" href="css/media-queries.css">
         
-         <link rel="stylesheet" href="css/account/modal-star-rate.css">
+        <link rel="stylesheet" href="css/account/modal-star-rate.css">
+         
+        <link rel="stylesheet" href="css/NewFile.css">
 
 		<!-- My Page -->
+		<!-- <link href="css/NewFile.css" type="text/css" rel="stylesheet" /> -->
 		<link href="css/chartModal.css" type="text/css" rel="stylesheet" />
 		<script src="js/pieOption.js"></script>
 		<script src="js/chart1.js"></script>
@@ -644,10 +647,10 @@
 		</section>   <!-- End section -->
 		
 		
-			<!-- Start Portfolio Section
+	<!-- Start Portfolio Section
 		=========================================== -->
 		
-	<section id="showcase">
+		<section id="showcase">
 			<div class="container">
 				<div class="row wow fadeInDown" data-wow-duration="500ms">
 					<div class="col-lg-12">
@@ -675,24 +678,22 @@
 					</div> <!-- /end col-lg-12 -->
 				</div> <!-- end row -->
 			</div>	<!-- end container -->
-		<!-- end container -->
-
-		<!-- portfolio items -->
-		<div class="portfolio-item-wrapper wow fadeInUp"
-			data-wow-duration="500ms">
-			<ul id="og-grid" class="og-grid">
+	
+			<!-- portfolio items -->
+			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
+                <ul id="og-grid" class="og-grid">
 
 				<!-- single portfolio item -->
 
 				<li class="mix app">
 				<a href="" data-toggle="modal" data-target="#myModal" >
-					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
+					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/CD-rock.jpg" alt=""/>
 						<div class="hover-mask">
 							<h3>East Sea</h3>
 							
-							<span>
+							<!-- <span>
 						 		<i class="fa fa-plus fa-2x"></i>
-							</span>
+							</span> -->
 						</div>
 					</a>			
 				</li>
@@ -700,15 +701,11 @@
 				
 				<!-- single portfolio item -->
 					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-toggle="modal" 
-						data-target="#myModal" >
-							<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/deogyu.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/deogyu.jpg" alt="">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -717,16 +714,11 @@
 					<!-- single portfolio item -->
 					
 					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Hwanseon.jpg" 
-						data-title="Samcheok" 
-						data-description="환선굴.">
-							<img src="img/travel-recommend/Hwanseon.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/Hwanseon.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -734,16 +726,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Janghohang.jpg" 
-						data-title="Samcheok" 
-						data-description="장호항.">
-							<img src="img/travel-recommend/Janghohang.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/Janghohang.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -751,157 +738,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/CK-cave.jpg" 
-						data-title="East Sea" 
-						data-description="천곡동굴.">
-							<img src="img/travel-recommend/CK-cave.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/mdysresort.jpg" 
-						data-title="Mojoo" 
-						data-description="무주 리조트.">
-							<img src="img/travel-recommend/mdysresort.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>	
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Jukseoru.jpg" 
-						data-title="Samcheok" 
-						data-description="죽서루.">
-							<img src="img/travel-recommend/Jukseoru.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>	
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/MH-lighthouse.jpg" 
-						data-title="East Sea" 
-						data-description="묵호등대.">
-							<img src="img/travel-recommend/MH-lighthouse.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/raje.jpg" 
-						data-title="Mojoo" 
-						data-description="라제통문.">
-							<img src="img/travel-recommend/raje.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/wine-cave.jpg" 
-						data-title="Mojoo" 
-						data-description="와인동굴.">
-							<img src="img/travel-recommend/wine-cave.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>	
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/oceanrailbike.jpg" 
-						data-title="Samcheok" 
-						data-description="삼척 레일바이크.">
-							<img src="img/travel-recommend/oceanrailbike.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/eastsea.jpg" 
-						data-title="East Sea" 
-						data-description="동해바다.">
-							<img src="img/travel-recommend/eastsea.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- portfolio items -->
-			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
-                <ul id="og-grid" class="og-grid">
-				
-					<!-- single portfolio item -->	
-					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/CD-rock.jpg" 
-						data-title="East Sea" 
-						data-description="촛대바위">
-							<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/CK-cave.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
 								
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
 							</div>
 						</a>
 					</li>
@@ -909,84 +750,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/deogyu.jpg" 
-						data-title="Mojoo" 
-						data-description="덕유산.">
-							<img src="img/travel-recommend/deogyu.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/mdysresort.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Hwanseon.jpg" 
-						data-title="Samcheok" 
-						data-description="환선굴.">
-							<img src="img/travel-recommend/Hwanseon.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Janghohang.jpg" 
-						data-title="Samcheok" 
-						data-description="장호항.">
-							<img src="img/travel-recommend/Janghohang.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/CK-cave.jpg" 
-						data-title="East Sea" 
-						data-description="천곡동굴.">
-							<img src="img/travel-recommend/CK-cave.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-						</a>
-					</li>
-					<!-- /single portfolio item -->
-					
-					<!-- single portfolio item -->
-					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/mdysresort.jpg" 
-						data-title="Mojoo" 
-						data-description="무주 리조트.">
-							<img src="img/travel-recommend/mdysresort.jpg" alt="HIXX">
-							<div class="hover-mask">
-								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+							
 							</div>	
 						</a>
 					</li>
@@ -994,16 +762,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/Jukseoru.jpg" 
-						data-title="Samcheok" 
-						data-description="죽서루.">
-							<img src="img/travel-recommend/Jukseoru.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/Jukseoru.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>	
 						</a>
 					</li>
@@ -1011,16 +774,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix app">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/MH-lighthouse.jpg" 
-						data-title="East Sea" 
-						data-description="묵호등대.">
-							<img src="img/travel-recommend/MH-lighthouse.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/MH-lighthouse.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>East Sea</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -1028,16 +786,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/raje.jpg" 
-						data-title="Mojoo" 
-						data-description="라제통문.">
-							<img src="img/travel-recommend/raje.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/raje.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
@@ -1045,16 +798,11 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix web">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/wine-cave.jpg" 
-						data-title="Mojoo" 
-						data-description="와인동굴.">
-							<img src="img/travel-recommend/wine-cave.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/wine-cave.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>	
 						</a>
 					</li>
@@ -1062,20 +810,32 @@
 					
 					<!-- single portfolio item -->
 					<li class="mix photoshop">
-						<a href="javascript:void(0)" 
-						data-largesrc="img/travel-recommend/oceanrailbike.jpg" 
-						data-title="Samcheok" 
-						data-description="삼척 레일바이크.">
-							<img src="img/travel-recommend/oceanrailbike.jpg" alt="HIXX">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/oceanrailbike.jpg" alt="HIXX">
 							<div class="hover-mask">
 								<h3>Samcheok</h3>
-								<span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+								
 							</div>
 						</a>
 					</li>
 					<!-- /single portfolio item -->
+					
+					<!-- single portfolio item -->
+					<li class="mix app">
+						<a href="" data-toggle="modal" data-target="#myModal" >
+					<img data-toggle="modal" data-target="#myModal"  src="img/travel-recommend/eastsea.jpg" alt="HIXX">
+							<div class="hover-mask">
+								<h3>East Sea</h3>
+								
+							</div>
+						</a>
+					</li>
+					<!-- /single portfolio item -->
+					<div class="all-post text-center">
+					
+					<a id="more-button" class="btn btn-transparent">더 보기</a>
+				</div>
+			
 			</ul>
 
 
@@ -1128,6 +888,83 @@
     </div>
    <div class="item 1">
       <img src="img/travel-recommend/deogyu.jpg" alt="HIXX">
+      <div class="carousel-caption">
+        <h3>5</h3>
+   		 <p>6</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+						</div>
+						
+				
+					
+				</div>
+
+				<!--       --------------------------------모달 푸터------------------------------------- -->
+				<!-- 
+      <div class="modal-footer">
+        
+      </div> -->
+
+			</div>
+		</div>
+	</div>
+	
+		<!------------------------------------------- Modal ----------------------------------------------------------->
+	<div class="modall fade" id="myModall" tabindex="-1" role="dialog"
+		aria-labelledby="modall" aria-hidden="true">
+		<div class="modall-dialog">
+			<div class="modall-content">
+
+				<!--       --------------------------------모달 바디------------------------------------- -->
+				<div class="modall-body">
+					<button type="button" class="close" data-dismiss="modall"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+
+
+					<div id="star-rate-title">
+						<h1 class="text-center">도시명</h1>
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/travel-recommend/wine-cave.jpg" alt="">
+      <div class="carousel-caption">
+        <h3>1</h3>
+   		 <p>2</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/travel-recommend/eastsea.jpg" alt="">
+      <div class="carousel-caption">
+        <h3>3</h3>
+   		 <p>4</p>
+      </div>
+    </div>
+   <div class="item 1">
+      <img src="img/travel-recommend/MH-lighthouse.jpg" alt="">
       <div class="carousel-caption">
         <h3>5</h3>
    		 <p>6</p>
