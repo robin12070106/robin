@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.hixx.web.dao.mysql.MySQLMemberDao;
 import com.hixx.web.data.dao.MemberDao;
@@ -57,8 +58,8 @@ public class JoinController extends HttpServlet {
 		}
 		else validate = 1;
 		
+		
 		request.setAttribute("validate", validate);
 		request.getRequestDispatcher("/WEB-INF/views/customer/join.jsp").forward(request, response);
 	}
-
 }
