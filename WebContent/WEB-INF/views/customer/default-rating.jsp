@@ -95,7 +95,6 @@
 			pass[<%=i%>] =  <%=cityPassto[i]%>;
 			rank[<%=i%>] =  <%=cityRank[i]%>;
 		<%};%>
-		
 	</script> 
 	<script src="js/jquery-1.11.1.min.js"></script>
 				
@@ -113,6 +112,7 @@
 				strHtml += "<td width = '1%'>번호</td>";
 				strHtml += "<td style = 'width:1%'>도시명</td>";
 				strHtml += "</td>";
+			
 				
 				if(text !== ""){
 					for (var i = 0; i < han.length; i++) {
@@ -125,12 +125,13 @@
 							hans.push(han[i]);
 						}
 					}
-					}
-				
+				}
 				else if(text == ""){
 					hans = han;
 				}
-
+				
+				alert(hans.length);
+				
 				strHtml += "</table>";
 				document.getElementById("urlid_confirm").innerHTML = strHtml;
 				

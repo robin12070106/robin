@@ -20,21 +20,32 @@ public class MySQLMemberDao implements MemberDao {
 
 	@Override
 	public int add(String id, String pwd, String gender, int age, String birthdate) {
-		String sql = "INSERT INTO MEMBER (ID, PWD, GENDER, AGE, BIRTHDATE, REGDATE) VALUES(?, ?, ?, ?, ?, NOW())";
-		int result =0;
-		int code = 0;
+		String codesql = "SELECT MAX(CODE)+1 CODE FROM MEMBER";
+		String sql = "INSERT INTO MEMBER (CODE, ID, PWD, GENDER, AGE, BIRTHDATE, REGDATE) VALUES(?, ?, ?, ?, ?, ?, NOW())";
+		int result =0;int codenum=0;
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql://211.238.142.84/hixx?autoReconnect=true&amp;useSSL=false&characterEncoding=UTF-8";
 			Connection con = DriverManager.getConnection(url, "sjlee", "6664");
-					
+			
+			Statement st = con.createStatement();
+			ResultSet rs = st.executeQuery(codesql);
+			
+			rs.next();
+			if (rs.getString("CODE") == null) codenum = 1;
+			else codenum = Integer.parseInt(rs.getString("CODE"));
+			
+			rs.close();
+			st.close();
+			
 			PreparedStatement pop = con.prepareStatement(sql);
-			pop.setString(1, id);
-			pop.setString(2, pwd);
-			pop.setString(3, gender);
-			pop.setInt(4, age);
-			pop.setString(5, birthdate);
+			pop.setInt(1, codenum);
+			pop.setString(2, id);
+			pop.setString(3, pwd);
+			pop.setString(4, gender);
+			pop.setInt(5, age);
+			pop.setString(6, birthdate);
 			
 			result = pop.executeUpdate();
 			
@@ -63,7 +74,8 @@ public class MySQLMemberDao implements MemberDao {
 			ResultSet rs = st.executeQuery(sql);
 			if(rs.next()) {
 				member = new Member();
-
+				
+				member.setCode(Integer.parseInt(rs.getString("CODE")));
 				member.setId(rs.getString("ID"));
 				member.setPwd(rs.getString("PWD"));
 				member.setGender(rs.getString("GENDER"));

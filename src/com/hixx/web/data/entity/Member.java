@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Member {
 	
+	private int code;
 	private String id;
 	private String pwd;
 	private String gender;
@@ -11,6 +12,13 @@ public class Member {
 	private String birthdate;
 	private Date regDate;
 	private int ticket;
+	
+	public int getCode() {
+		return code;
+	}
+	public void setCode(int code) {
+		this.code = code;
+	}
 	
 	public String getId() {
 		return id;
