@@ -13,10 +13,8 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 	#Home
 	#Navigation
 	#About
-	#Service
 	#Portfolio
 	#Our Team
-	#Pricing
 	#Blog
 	#Contact
 */
@@ -419,6 +417,7 @@ h1, h2, h3, h4, h5, h6 {
 #counter {
     background-image: url(../img/parallax/city.jpg);
     padding: 70px 0;
+    color: #e6e6e6;
 }
 
 .counters-item {
@@ -446,39 +445,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 20px;
 	margin: 0;
 }
-
-
-/*=================================================================
-	Services section
-==================================================================*/
-
-#services {
-    padding: 70px 0 100px;
-}
-
-#services .title {
-    padding-bottom: 125px;
-}
-
-.service-block {
-    padding: 50px 20px;
-    border-left: 1px solid #4e595f;
-    border-top: 1px solid #4e595f;
-    margin-bottom: 40px;
-	
-	-webkit-box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
-	   -moz-box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
-			box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
-}
-
-.service-icon {
-    margin-bottom: 40px;
-}
-
-.service-block h3 {
-	text-transform: uppercase;
-}
-
 
 
 /*=================================================================
@@ -630,6 +596,19 @@ h1, h2, h3, h4, h5, h6 {
 #team-skills {
     padding: 70px 0;
     background-image: url(../img/parallax/bg2.jpg);
+    color: #e6e6e6;
+}
+
+#team-skills h2{
+    color: #e6e6e6;
+}
+#team-skills .border:before{
+	border: 1px ridge #e6e6e6;
+    background-color: #e6e6e6;
+}
+	
+#team-skills .border{    
+    border-top: 1px solid #e6e6e6;
 }
 
 .skill-chart > h3 {
@@ -823,62 +802,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #FF530A;
 }
 
-/*=================================================================
-	Pricing section
-==================================================================*/
-
-#pricing {
-    padding: 70px 0;
-}
-
-.pricing {
-	background-color: #F6F6F6;
-}
-
-.price-title {
-  background-color: #F6F6F6;
-  padding: 30px 0 20px;
-}
-
-.price-title > h3 {
-    color: #FF530A;
-    font-family: Oswald;
-    font-weight: 700;
-    margin: 0 0 10px;
-    text-transform: uppercase;
-}
-
-.price-title > p {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-
-.price-title .value {
-	color: #FF530A;
-	font-size: 30px;
-}
-
-.pricing li {
-    border-top: 2px solid #3F4045;
-    font-weight: 400;
-    padding: 10px 0;
-}
-
-.pricing li:last-child {
-    border-bottom: 2px solid #3F4045;
-}
-
-.pricing li:nth-child(2n) {
-    background-color: #e4e4e4;
-}
-
-.pricing a.btn {
-    text-transform: uppercase;
-	margin: 20px 0;
-}
-
-
 
 /*=================================================================
 	Testimonial section
@@ -887,6 +810,7 @@ h1, h2, h3, h4, h5, h6 {
 #testimonial {
     background-image: url(../img/parallax/bg1.jpg);
     padding: 70px 0;
+    color: #e6e6e6;
 }
 
 #testimonials .owl-wrapper-outer {
