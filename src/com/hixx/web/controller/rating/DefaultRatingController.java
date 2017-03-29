@@ -21,6 +21,7 @@ public class DefaultRatingController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		String id = (String)request.getSession().getAttribute("id");
 		MemberDao memberDao = new MySQLMemberDao();
 		int cnum = 51;int sw=0;
