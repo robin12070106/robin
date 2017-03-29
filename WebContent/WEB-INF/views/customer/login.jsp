@@ -38,9 +38,26 @@
 	href="ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed"
 	href="ico/apple-touch-icon-57-precomposed.png">
+<script>
+	window.addEventListener("load", function() {
+		var facebookBtn = document.querySelector("#facebook-btn");
+		var twitterBtn = document.querySelector("#twitter-btn")
+		var googlePlusBtn = document.querySelector("#google-plus-btn");
 
+		facebookBtn.onclick = function() {
+			alert("죄송합니다 Facebook은 준비중입니다");
+		};
+		
+		twitterBtn.onclick = function() {
+			alert("죄송합니다 Twitter는 준비중입니다");
+		};
+		
+		googlePlusBtn.onclick = function() {
+			alert("죄송합니다 Google+는 준비중입니다");
+		};
+	});
+</script>
 </head>
-
 <body>
 	<!-- Top content -->
 	<div class="top-content">
@@ -94,11 +111,11 @@
 					<div class="col-sm-6 col-sm-offset-3 social-login">
 						<h3>이런 방법도 있어요!</h3>
 						<div class="social-login-buttons">
-							<a class="btn btn-link-2" href="#"> <i class="fa fa-facebook"></i>
+							<a id = "facebook-btn" class="btn btn-link-2" href="#"> <i class="fa fa-facebook"></i>
 								Facebook
-							</a> <a class="btn btn-link-2" href="#"> <i class="fa fa-twitter"></i>
+							</a> <a id = "twitter-btn" class="btn btn-link-2" href="#"> <i class="fa fa-twitter"></i>
 								Twitter
-							</a> <a class="btn btn-link-2" href="#"> <i class="fa fa-google-plus"></i>
+							</a> <a id = "google-plus-btn" class="btn btn-link-2" href="#"> <i class="fa fa-google-plus"></i>
 								Google+
 							</a>
 						</div>

@@ -13,9 +13,6 @@ import com.hixx.web.dao.mysql.MySQLMemberDao;
 import com.hixx.web.data.dao.MemberDao;
 import com.hixx.web.data.entity.Member;
 
-/**
- * Servlet implementation class LoginController
- */
 @WebServlet("/login")
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -32,7 +29,6 @@ public class LoginController extends HttpServlet {
 		MemberDao memberDao = new MySQLMemberDao();
 		Member member = memberDao.get(formUsername);
 		int validate = 0;
-		System.out.println(member.getPwd());
 		if (member != null && member.getPwd().equals(formPassword)) {
 			validate = 1;
 			HttpSession session = request.getSession();
