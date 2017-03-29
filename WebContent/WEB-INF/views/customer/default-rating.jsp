@@ -43,7 +43,7 @@
 <link rel="stylesheet" href="css/account/star-rate.css">
 <!-- Media Queries -->
 <link rel="stylesheet" href="css/media-queries.css">
-
+<!-- Modal star rate -->
 <link rel="stylesheet" href="css/account/modal-star-rate.css">
 
 <!--
@@ -142,7 +142,17 @@
 	</div>
 
 	<div class="progress">
-		<p>진행률 : ${result}/10 <progress value = "${result}" max = "10" id = "progress-bar"> </progress></p>
+		<p>진행률 : ${result}/10
+			 <progress value = "${result}" max = "10" id = "progress-bar">
+			 	<div pseudo="-webkit-progress-inner-element">
+			 		<div pseudo="-webkit-progress-bar">
+			 			<div pseudo="-webkit-progress-value" style="width:80%;">
+			 			
+			 			</div>
+			 		</div>
+			 	</div>
+			 </progress>
+		 </p>
 	</div>
 	<!--
 	    Start Preloader
