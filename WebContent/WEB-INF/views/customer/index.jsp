@@ -39,15 +39,9 @@
         <link rel="stylesheet" href="css/main.css">
 		<!-- Media Queries -->
         <link rel="stylesheet" href="css/media-queries.css">
-<<<<<<< HEAD
-        
-        <link rel="stylesheet" href="css/account/modal-star-rate.css">
-         
-        <link rel="stylesheet" href="css/NewFile.css">
-=======
         <!-- Modal star rate -->
         <link rel="stylesheet" href="css/account/modal-star-rate.css">
->>>>>>> refs/remotes/origin/master
+
 
 		<!-- My Page -->
 		<!-- <link href="css/NewFile.css" type="text/css" rel="stylesheet" /> -->
@@ -561,102 +555,8 @@
 		</section>   <!-- end section -->
 		
 		
-<<<<<<< HEAD
-		<!-- Start Services Section
-		==================================== -->
-		
-		<section id="services" class="bg-one">
-			<div class="container">
-				<div class="row">
-					
-					<!-- section title -->
-					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-						<h2>Our <span class="color">Services</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-					
-                    <!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-wordpress fa-5x"></i>
-							</div>
-							<h3>WordPress Theme</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-						</div>
-					</article>
-                    <!-- End Single Service Item -->
-                    
-                    <!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-desktop fa-5x"></i>
-							</div>
-							<h3>Responsive Design</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-						</div>
-					</article>
-                    <!-- End Single Service Item -->
-                    
-                    <!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-play fa-5x"></i>
-							</div>
-							<h3>Media &amp; Advertisement</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-					
-					<!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-eye fa-5x"></i>
-							</div>
-							<h3>Graphic Design</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-					
-					<!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-android fa-5x"></i>
-							</div>
-							<h3>Apps Development</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-					
-					<!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="service-block text-center kill-margin-bottom">
-							<div class="service-icon text-center">
-								<i class="fa fa-link fa-5x"></i>
-							</div>
-							<h3>Networking</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-						
-				</div> 		<!-- End row -->
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
-		
-		
-	<!-- Start Portfolio Section
-=======
+
 		<!-- Start Portfolio Section
->>>>>>> refs/remotes/origin/master
 		=========================================== -->
 		
 		<section id="showcase">
@@ -679,7 +579,7 @@
 								<li><a href="javascript:void(0)" class="filter" data-filter=".app">동해</a></li>
 								<li><a href="javascript:void(0)" class="filter" data-filter=".web">무주</a></li>
 								<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">삼척</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">Illustrator</a></li>
+								
 							</ul>
 						</div>
 						<!-- /portfolio item filtering -->
@@ -691,6 +591,7 @@
 			<!-- portfolio items -->
 			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
                 <ul id="og-grid" class="og-grid">
+
 
 				<!-- single portfolio item -->
 
@@ -710,15 +611,9 @@
 				
 				<!-- single portfolio item -->
 					<li class="mix web">
-<<<<<<< HEAD
 						<a href="" data-toggle="modal" data-target="#myModal" >
 					<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/deogyu.jpg" alt="">
-=======
-						<a href="javascript:void(0)" 
-						data-toggle="modal1" 
-						data-target="#myModal" >
-							<img data-toggle="modal" data-target="#myModal" src="img/travel-recommend/deogyu.jpg" alt="HIXX">
->>>>>>> refs/remotes/origin/master
+
 							<div class="hover-mask">
 								<h3>Mojoo</h3>
 								
@@ -847,13 +742,14 @@
 						</a>
 					</li>
 					<!-- /single portfolio item -->
-					<div class="all-post text-center">
-					
-					<a id="more-button" class="btn btn-transparent">더 보기</a>
-				</div>
+				
 			
 			</ul>
 
+				<div class="all-post text-center">
+					
+					<a id="more-button" class="btn btn-transparent">더 보기</a>
+				</div>
 
 
 			<!-- portfolio items wrapper -->
@@ -875,7 +771,7 @@
 
 
 					<div id="star-rate-title">
-						<h1 class="text-center">Seoul</h1>
+						<h1 class="text-center">도시명</h1>
 
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -937,82 +833,6 @@
 		</div>
 	</div>
 	
-		<!------------------------------------------- Modal ----------------------------------------------------------->
-	<div class="modall fade" id="myModall" tabindex="-1" role="dialog"
-		aria-labelledby="modall" aria-hidden="true">
-		<div class="modall-dialog">
-			<div class="modall-content">
-
-				<!--       --------------------------------모달 바디------------------------------------- -->
-				<div class="modall-body">
-					<button type="button" class="close" data-dismiss="modall"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-
-
-					<div id="star-rate-title">
-						<h1 class="text-center">도시명</h1>
-
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="img/travel-recommend/wine-cave.jpg" alt="">
-      <div class="carousel-caption">
-        <h3>1</h3>
-   		 <p>2</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="img/travel-recommend/eastsea.jpg" alt="">
-      <div class="carousel-caption">
-        <h3>3</h3>
-   		 <p>4</p>
-      </div>
-    </div>
-   <div class="item 1">
-      <img src="img/travel-recommend/MH-lighthouse.jpg" alt="">
-      <div class="carousel-caption">
-        <h3>5</h3>
-   		 <p>6</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-						</div>
-						
-				
-					
-				</div>
-
-				<!--       --------------------------------모달 푸터------------------------------------- -->
-				<!-- 
-      <div class="modal-footer">
-        
-      </div> -->
-
-			</div>
-		</div>
-	</div>
 		
 		
 		<!-- Start Team Skills
