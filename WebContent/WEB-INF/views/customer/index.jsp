@@ -694,9 +694,9 @@
 						<!-- portfolio item filtering -->
 						<div class="portfolio-filter clearfix">
 							<ul class="text-center">
-							    <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".app">시</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".web">도</a></li>								
+							    <li><a href="javascript:void(0)" class="filter" data-filter="all">총점</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".app">볼거리</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".web">먹거리</a></li>								
 							</ul>
 						</div>
 						<!-- /portfolio item filtering -->
