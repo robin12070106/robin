@@ -30,6 +30,19 @@ jQuery(function ($) { "use strict";
 		cursorborder: 0,
 	});
 
+	
+	$("#star-Btn").click(function(){
+	    nice.hide();
+	});
+	$("#map-Btn").click(function(){
+	    nice.hide();
+	});
+	$("#pie-Btn").click(function(){
+	    nice.hide();
+	});
+	$(".close").click(function(){
+    	nice.show();
+	});
 
 	/* ========================================================================= */
 	/*	Scroll Up / Back to top

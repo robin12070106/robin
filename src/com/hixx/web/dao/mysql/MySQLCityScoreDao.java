@@ -6,8 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 import com.hixx.web.data.dao.CityScoreDao;
+import com.hixx.web.data.entity.CityScore;
 
 public class MySQLCityScoreDao implements CityScoreDao {
 
@@ -110,40 +112,58 @@ public class MySQLCityScoreDao implements CityScoreDao {
 	}
 
 	@Override
-	public void add(String id, int ccode, int trate, int frate, int srate) {
+	public int add(String id, int ccode, int trate, int frate, int srate) {
 		String codesql = "SELECT MAX(CODE)+1 CODE FROM CITYSCORE";
+		String search = "SELECT COUNTRY_CODE CODE FROM CITYSCORE WHERE WRITER = '"+id+"' GROUP BY COUNTRY_CODE"; 
 		String sql = "INSERT INTO CITYSCORE (CODE,WRITER,COUNTRY_CODE, TRATE, FRATE, SRATE) VALUES (?,?,?,?,?,?)";
-		int codenum=0;
+		
+		int codenum=0;int result=0;int sw=0;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql://211.238.142.84/hixx?autoReconnect=true&amp;useSSL=false&characterEncoding=UTF-8";
 			Connection con = DriverManager.getConnection(url, "sjlee", "6664");
 			
-			Statement st = con.createStatement();
-			ResultSet rs = st.executeQuery(codesql);
-			if(rs.next()) codenum = Integer.parseInt(rs.getString("CODE"));
-			rs.close();
-			st.close();
-			con.close();
+			Statement st3 = con.createStatement();
+			ResultSet rs3 = st3.executeQuery(search);
+			while(rs3.next()) {
+				if (Integer.parseInt(rs3.getString("CODE")) == ccode) sw=1;
+			}
+			rs3.close();
+			st3.close();
 			
-			PreparedStatement st2 = con.prepareStatement(sql);
-		
-			st2.setInt(1, codenum);
-			st2.setString(2, id);
-			st2.setInt(3, ccode);
-			st2.setInt(4, trate);
-			st2.setInt(5, frate);
-			st2.setInt(6, srate);
+			if (sw !=1) {
+				Statement st = con.createStatement();
+				ResultSet rs = st.executeQuery(codesql);
+				rs.next();
+				if (rs.getString("CODE") == null) codenum = 1;
+				else codenum = Integer.parseInt(rs.getString("CODE"));
+				
+				rs.close();
+				st.close();
 			
-			st2.executeUpdate();
-			
-			
+				
+				PreparedStatement st2 = con.prepareStatement(sql);
+				st2.setInt(1, codenum);
+				st2.setString(2, id);
+				st2.setInt(3, ccode);
+				st2.setInt(4, trate);
+				st2.setInt(5, frate);
+				st2.setInt(6, srate);
+				result = st2.executeUpdate();
+				
+				st2.close();
+				con.close();
+				
+			}
+			else return 0;
+				
 			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}	
+		}
+		return result;
 	}
 
 }

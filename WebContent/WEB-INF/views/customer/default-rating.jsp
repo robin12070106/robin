@@ -43,7 +43,7 @@
 <link rel="stylesheet" href="css/account/star-rate.css">
 <!-- Media Queries -->
 <link rel="stylesheet" href="css/media-queries.css">
-<!-- Modal star rate -->
+
 <link rel="stylesheet" href="css/account/modal-star-rate.css">
 
 <!--
@@ -58,93 +58,112 @@
 	rel='stylesheet' type='text/css'>
 
 <!-- Modernizer Script for old Browsers -->
-<script src="js/modernizr-2.6.2.min.js"></script>
-
-
-<script>
-	(function(i, s, o, g, r, a, m) {
-		i['GoogleAnalyticObject'] = r;
-		i[r] = i[r] || function() {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date();
-		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-		a.async = 1;
-		a.src = g;
-		m.parentNode.insertBefore(a, m)
-	})(window, document, 'script', '//www.google-analytics.com/analytics.js',
-			'ga');
-
-	ga('create', 'UA-54152927-1', 'auto');
-	ga('send', 'pageview');
-</script>
-
-<script>
-	var han = new Array();
-	var pass = new Array();
-	var rank = new Array();
-	<%
-		String cityHanto[] = (String[])request.getAttribute("cityHanto");
-		int cityPassto[] = (int[])request.getAttribute("cityPassto");
-		int cityRank[] = (int[])request.getAttribute("cityRank");
-	%>
+  	<script src="js/modernizr-2.6.2.min.js"></script>
 	
-	<%for (int i=0;i<cityHanto.length;i++) {%>
-		han[<%=i%>] =  '<%=cityHanto[i]%>';
-		pass[<%=i%>] =  <%=cityPassto[i]%>;
-		rank[<%=i%>] =  <%=cityRank[i]%>;
-	<%};%>
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js',
+				'ga');
 	
-</script> 
+		ga('create', 'UA-54152927-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<script>
+		var han = [];
+		var pass = [];
+		var rank = new Array();
+		<%
+			String cityHanto[] = (String[])request.getAttribute("cityHanto");
+			int cityPassto[] = (int[])request.getAttribute("cityPassto");
+			int cityRank[] = (int[])request.getAttribute("cityRank");
+		%>
 		
-<script>
-	function onChange() {
-		var text = document.getElementById("urlid").value;
-		var sw = 0;
-		var strHtml = "";
-
-		strHtml += "<table border ='1' cellpadding='0'>";
-		strHtml += "<tr><td colspan ='2'></td><tr>";
-		strHtml += "<tr bgcolor = '#E2E2E2' align='center'>";
-		strHtml += "<td width = '1%'>번호</td>";
-		strHtml += "<td style = 'width:1%'>도시명</td>";
-		strHtml += "</td>";
-
-		for (var i = 0; i < han.length; i++) {
-			if (han[i].substring(0, text.length) == text) {
-				strHtml += "<tr align='center'>";
-				strHtml += "<td>" + parseInt(sw + 1) + "</td>";
-				strHtml += "<td>" + han[i] + "</td>";
-				strHtml += "</tr>";
-				sw++;
+		<%for (int i=0;i<cityHanto.length;i++) {%>
+			
+		
+			han[<%=i%>] =  '<%=cityHanto[i]%>';
+			pass[<%=i%>] =  <%=cityPassto[i]%>;
+			rank[<%=i%>] =  <%=cityRank[i]%>;
+		<%};%>
+	</script> 
+	<script src="js/jquery-1.11.1.min.js"></script>
+				
+	<script>
+		var checkHan = [];
+			function onChange() {	
+				var hans = [];
+				var text = document.getElementById("urlid").value;
+				var sw = 0;
+				var strHtml = "";
+		
+				strHtml += "<table border ='1' cellpadding='0'>";
+				strHtml += "<tr><td colspan ='2'></td><tr>";
+				strHtml += "<tr bgcolor = '#E2E2E2' align='center'>";
+				strHtml += "<td width = '1%'>번호</td>";
+				strHtml += "<td style = 'width:1%'>도시명</td>";
+				strHtml += "</td>";
+			
+				
+				if(text !== ""){
+					for (var i = 0; i < han.length; i++) {
+						if (han[i].indexOf(text)>=0) {
+							strHtml += "<tr align='center'>";
+							strHtml += "<td>" + parseInt(sw + 1) + "</td>";
+							strHtml += "<td>" + han[i] + "</td>";
+							strHtml += "</tr>";
+							sw++;
+							hans.push(han[i]);
+						}
+					}
+				}
+				else if(text == ""){
+					hans = han;
+				}
+						
+				strHtml += "</table>";
+				document.getElementById("urlid_confirm").innerHTML = strHtml;
+				
+				var ogGrid = document.querySelector("#og-grid1");
+				var lis = document.querySelectorAll("#og-grid1 li");
+	
+	 	 		for(var i=(lis.length-1) ; i>=0 ; i--)
+				{	
+					ogGrid.removeChild(lis[i]);
+					
+				}
+				
+				for(var j in hans)			
+				{
+					var template = document.querySelector("#template");
+					var a = template.content.querySelector(".city");
+					var h = template.content.querySelector("#h3");
+					
+					a.setAttribute('data-id',hans[j]);
+					h.innerHTML = hans[j];
+					
+					var clone = document.importNode(template.content, true);
+					
+					ogGrid.appendChild(clone);
+					
+					console.log("---------------");
+					console.log(hans[j]);
+					
+				} 
+				
+				
 			}
-			if (text == "")
-				strHtml = "";
-		}
-		strHtml += "</table>";
-		document.getElementById("urlid_confirm").innerHTML = strHtml;
-	}
-</script>
-
-
-
-<script>
-	window.addEventListener("onload",function(){
-		var moreButton = document.querySelector("#more-button");
-		
-		moreButton.onclick = function (){
-			var template = document.querySelector("#template");
-			var ogGrid = document.querySelector("#og-grid");
-			
-			var clone = document.importNode(template.content, true);
-			
-			ogGrid.appendChild(clone.clone);
-			
-		}
-		
-	});
+	</script>
 	
-</script>
-
 </head>
 
 <body id="body">
@@ -159,17 +178,7 @@
 	</div>
 
 	<div class="progress">
-		<p>진행률 : ${result}/10
-			 <progress value = "${result}" max = "10" id = "progress-bar">
-			 	<div pseudo="-webkit-progress-inner-element">
-			 		<div pseudo="-webkit-progress-bar">
-			 			<div pseudo="-webkit-progress-value" style="width:80%;">
-			 			
-			 			</div>
-			 		</div>
-			 	</div>
-			 </progress>
-		 </p>
+		<p>진행률 : ${result}/10 <progress value = "${result}" max = "10" id = "progress-bar"> </progress></p>
 	</div>
 	<!--
 	    Start Preloader
@@ -211,68 +220,34 @@
 		<!-- portfolio items -->
 		<div class="portfolio-item-wrapper wow fadeInUp"
 			data-wow-duration="500ms">
-			<ul id="og-grid" class="og-grid">
-				<script>
-					var pop = "헐헐헐";
-				</script>
-				<%for(int i=0;i<10;i++){ %>
-					<li class="mix app">
-					<a href="" class="city" data-toggle="modal" data-target="#myModal" data-id="&{han[<%=i%>]};">  
-						<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
-							<div class="hover-mask">
-								<h3></h3>						
-								<span>
-									&{han[<%=i%>]};
-							 		<i class="fa fa-plus fa-2x"></i>
-								</span>
-							</div>
-					</a> 		
-					</li>
-				<%} %>
-				
+			<ul id="og-grid1" class="og-grid">
 				
 				<template id="template">
 				<li class="mix app">
-					<a href="" data-toggle="modal"  class="city" data-target="#myModal" data-id="광주"  >
+					<a href="" data-toggle="modal"  class="city" data-target="#myModal" data-id="" >
 						<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
 							<div class="hover-mask">
-							<h3></h3>
+							<h3 id="h3"></h3>
 							
-							<span>
-						 		<i class="fa fa-plus fa-2x"></i>
-							</span>
+						
 						</div>
 					</a>			
 				</li>
 				</template>
 				
 				<!-- /single portfolio item -->
-				 
+				<c:forEach items="${cityHanto}" var="i">
 				<li class="mix app">
-				<a href="" data-toggle="modal"  class="city" data-target="#myModal" data-id="광주"  >
+				<a href="" data-toggle="modal"  class="city" data-target="#myModal" data-id="${i }"  >
 					<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
 						<div class="hover-mask">
-							<h3>East Sea</h3>
-							
-							<span>
-						 		<i class="fa fa-plus fa-2x"></i>
-							</span>
+							<h3>${i }</h3>
 						</div>
 				</a>			
 				</li>
+				</c:forEach>
 
-				<li class="mix app">
-					<a href="" data-toggle="modal" class="city" data-target="#myModal" data-id="부싼" >
-						<img src="img/travel-recommend/CD-rock.jpg" alt="HIXX"/>
-						<div class="hover-mask">
-							<h3>East Sea</h3>
-							
-							<span>
-						 		<i class="fa fa-plus fa-2x"></i>
-							</span>
-						</div>
-					</a>			
-				</li>
+				
 			</ul>
 
 		 <!-- portfolio items wrapper -->
@@ -302,15 +277,16 @@
 						<span aria-hidden="true">&times;</span>
 					</button>
 
-					<form id="form" enctype="multipart/form-data">
-
+					
 					<div id="star-rate-title">
 						<h1 class="text-center" id="modal-city-name">city-name</h1>
 					</div>
-							
+					
+					
+					<form id="form" method="POST">		
 						<div id="star-rate">
 							<h1 class="hidden">별점 찍기</h1>
-							<input type="hidden" id="modal-city-name" value="" name="city"/>					
+							<input type="hidden" id="form-modal-city-name" value="" name="city"/>					
 							<div id="total-rate">
 								<ul>
 								<li>
@@ -417,7 +393,7 @@
 						<div id="submit">
 							<input id="reg-button" type="submit" class="btn btn-primary" value="저장">
 						</div>
-						</form>
+					</form>
 					
 				</div>
 
@@ -436,20 +412,32 @@
 		=====================================-->
 
 	<!-- Main jQuery -->
-	<script src="js/jquery-1.11.1.min.js"></script>
+		
 	
 	<script>
-	$(document).ready(function () {
-	    $(".city").click(function (){
-	    	var cityId = $(this).data('id');     
-			$('.modal-body #modal-city-name').text(cityId);
-			$('.modal-body #modal-city-name').val(cityId);
-    });
-	});
+	$(document).ready(function (e) {
+	      $('.og-grid').click(function (event){
+	    		var a = event.target;
+	    		
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		if (a.nodeName != 'A') a = a.parentNode;
+	    		
+	    	 var cityId = $(a).data('id');
+
+
+	 	      $('.modal-body #modal-city-name').text(cityId);
+       	      $('.modal-body #form-modal-city-name').val(cityId);
+	  	});
+	})
 
 	</script>
+
 	
-   <script>
+<!-- 	
+    <script>
    var f = function() {
 	   
       var regButton = document.querySelector(".reg-button");
@@ -471,6 +459,27 @@
    };
    f();
    </script>
+ -->
+
+
+
+	<script>
+		window.addEventListener("onload",function(){
+			var moreButton = document.querySelector("#more-button");
+			
+			moreButton.onclick = function (){
+				var template = document.querySelector("#template");
+				var ogGrid = document.querySelector("#og-grid");
+				
+				var clone = document.importNode(template.content, true);
+				
+				ogGrid.appendChild(clone.clone);
+				
+			}
+			
+		});
+		
+	</script>
    	
 	
 	<!-- Bootstrap 3.1 -->
